@@ -27,14 +27,17 @@ url: "https://cleverberry.github.io/evilsaint/" # the base hostname & protocol f
 twitter_username: jekyllrb
 github_username:  jekyll
 
-paginate:           5
-paginate_path:      "/page:num/"
+gems:
+  - jekyll-paginate-v2
 
+pagination:
+  enabled: true
+
+  
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
