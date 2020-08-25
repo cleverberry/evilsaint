@@ -156,12 +156,18 @@
                 <img class="img-por" src="{{site.baseurl}}/assets/images/por1.png" alt="" style="max-width: 420px; width: 100%; display: block;" />
                 <img class="img-nike" src="{{site.baseurl}}/assets/images/nike1.png" alt="" style="max-width: 420px; width: 100%; display: block;" />
               </div>
+              
+              <!-- Pager -->
+              {% if paginator.total_pages > 1 %}
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
+                  {% if paginator.previous_page %}
                   <li class="page-item">
-                    <a class="page-link prev-btn" href="#"><span>Prev</span> </a>
+                    <a class="page-link prev-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Prev</span> </a>
                   </li>
-                  <li class="page-item">
+                  {% endif %}
+                  
+                  <!-- <li class="page-item">
                     <a class="page-link new-pg-num active" href="#"><span>01</span></a>
                   </li>
                   <li class="page-item">
@@ -175,13 +181,16 @@
                   </li>
                   <li class="page-item pg-num">
                     <a class="page-link new-pg-num" href="#"><span>05</span></a>
-                  </li>
-
+                  </li> -->
+                  {% if paginator.next_page %}
                   <li class="page-item">
-                    <a class="page-link next-btn" href="#"><span>Next</span></a>
+                    <a class="page-link next-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Next</span></a>
                   </li>
+                  {% endif %}
+                  
                 </ul>
               </nav>
+              {% endif %}
             </div>
           </div>
         </div>
