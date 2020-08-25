@@ -1,0 +1,132 @@
+I".
+<div class="container main-card-body">
+  <hr />
+  <div class="row">
+    <div class="col-sm-3 col-xs-12 title-img-col">
+      <img class="card-img-top" src="/assets/images/card1-img.png" alt="Sample Blog" />
+    </div>
+    <div class="col card-title-col">
+      <h5 class="card-title"><a href="/coding/2020/08/19/sample-blog.html">Sample Blog</a></h5>
+      <span class="card-date">2020-08-19 11:19:34 +0800</span>
+    </div>
+  </div>
+   <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="/coding/2020/08/19/sample-blog.html" class="btn card-read-more">Read More</a>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <div class="row text-right">
+    <div class="col card-btn-bottom">
+      <a href="#" class="btn card-btn-pro">coding</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container main-card-body">
+  <hr />
+  <div class="row">
+    <div class="col-sm-3 col-xs-12 title-img-col">
+      <img class="card-img-top" src="/assets/images/card1-img.png" alt="About This layout" />
+    </div>
+    <div class="col card-title-col">
+      <h5 class="card-title"><a href="/coding/2020/04/08/about-this-layout.html">About This layout</a></h5>
+      <span class="card-date">2020-04-08 00:00:00 +0800</span>
+    </div>
+  </div>
+   <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="/coding/2020/04/08/about-this-layout.html" class="btn card-read-more">Read More</a>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <div class="row text-right">
+    <div class="col card-btn-bottom">
+      <a href="#" class="btn card-btn-pro">coding</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container main-card-body">
+  <hr />
+  <div class="row">
+    <div class="col-sm-3 col-xs-12 title-img-col">
+      <img class="card-img-top" src="/assets/images/blue-js.png" alt="Suiquam erat volut Quisque posuere itur hendrerit." />
+    </div>
+    <div class="col card-title-col">
+      <h5 class="card-title"><a href="/coding/2020/04/07/suiquam-erat-volut.html">Suiquam erat volut Quisque posuere itur hendrerit.</a></h5>
+      <span class="card-date">2020-04-07 00:00:00 +0800</span>
+    </div>
+  </div>
+   <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="/coding/2020/04/07/suiquam-erat-volut.html" class="btn card-read-more">Read More</a>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <div class="row text-right">
+    <div class="col card-btn-bottom">
+      <a href="#" class="btn card-btn-pro">coding</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container main-card-body">
+  <hr />
+  <div class="row">
+    <div class="col-sm-3 col-xs-12 title-img-col">
+      <img class="card-img-top" src="/assets/images/Java.png" alt="Heading Type Here" />
+    </div>
+    <div class="col card-title-col">
+      <h5 class="card-title"><a href="/programming/2020/04/07/heading-type-here.html">Heading Type Here</a></h5>
+      <span class="card-date">2020-04-07 00:00:00 +0800</span>
+    </div>
+  </div>
+   <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="/programming/2020/04/07/heading-type-here.html" class="btn card-read-more">Read More</a>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <div class="row text-right">
+    <div class="col card-btn-bottom">
+      <a href="#" class="btn card-btn-pro">programming</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container main-card-body">
+  <hr />
+  <div class="row">
+    <div class="col-sm-3 col-xs-12 title-img-col">
+      <img class="card-img-top" src="/assets/images/card1-img.png" alt="About This layout" />
+    </div>
+    <div class="col card-title-col">
+      <h5 class="card-title"><a href="/coding/2020/04/07/about-this-layout.html">About This layout</a></h5>
+      <span class="card-date">2020-04-07 00:00:00 +0800</span>
+    </div>
+  </div>
+   <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="/coding/2020/04/07/about-this-layout.html" class="btn card-read-more">Read More</a>
+  </div>
+</div>
+<div class="container">
+  <hr />
+  <div class="row text-right">
+    <div class="col card-btn-bottom">
+      <a href="#" class="btn card-btn-pro">coding</a>
+      
+    </div>
+  </div>
+</div>
+
+:ET
