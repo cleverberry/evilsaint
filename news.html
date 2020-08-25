@@ -16,7 +16,7 @@ layout: default
   </div>
    <div class="card-body">
     <p class="card-text">{{blog.meta}}</p>
-    <a href="#" class="btn card-read-more">Read More</a>
+    <a href="{{ blog.url | prepend: site.baseurl }}" class="btn card-read-more">Read More</a>
   </div>
 </div>
 <div class="container">
