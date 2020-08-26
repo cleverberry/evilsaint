@@ -275,7 +275,6 @@ h5.card-title {
   padding-bottom: 30px;
   display: grid;
   grid-gap: 20px;
-
 }
 span.card-date:before {
   content: "";
