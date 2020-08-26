@@ -639,12 +639,6 @@ button.btn.toggle-btn:focus {
   padding-bottom: 50px;
 }
 
-.row.text-right {
-  margin-bottom: 50px;
-  
-
-}
-
 .row.blog-text-row {
   padding: 50px 8px;
   background-image: linear-gradient(to right, white, #f7f8fb, white) !important;
