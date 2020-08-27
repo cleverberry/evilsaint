@@ -7,16 +7,16 @@ layout: default
   <div class="container main-card-body">
     <div class="row">
       <div class="col-sm-3 col-xs-12 title-img-col">
-        <img class="card-img-top" src="{{post.url | prepend: site.baseurl}}" alt="{{post.title}}" />
+        <img class="card-img-top" src="{{blog.url | prepend: site.baseurl}}" alt="{{post.title}}" />
       </div>
       <div class="col card-title-col">
-        <h5 class="card-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h5>
+        <h5 class="card-title"><a href="{{blog.url | prepend: site.baseurl}}">{{post.title}}</a></h5>
         <span class="card-date">{{post.date}}</span>
       </div>
     </div>
      <div class="card-body">
       <p class="card-text">{{post.meta}}</p>
-      <a href="{{post.url | prepend: site.baseurl}}" class="btn card-read-more">Read More</a>
+      <a href="{{blog.url | prepend: site.baseurl}}" class="btn card-read-more">Read More</a>
     </div>
   </div>
   <div class="container">
