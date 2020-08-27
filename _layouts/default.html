@@ -161,32 +161,75 @@
               {% if paginator.total_pages > 1 %}
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                  {% if paginator.previous_page %}
                   <li class="page-item">
+                    {% if paginator.page != 1 %}
                     <a class="page-link prev-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Prev</span> </a>
+                    {% else %}
+                    <a class="page-link prev-btn" href="{{ site.baseurl }}/"><span>Prev</span> </a>
+                    {% endif %}
+                  </li>
+                  
+
+                  {% assign rightlimit = paginator.page | plus:2 %}
+                  {% assign startlimit = 2 %}
+
+                  {% if paginator.page == 1 %}
+                    {% assign rightlimit = paginator.page | plus:4 %}
+                  {% elsif paginator.page == 2 %}
+                    {% assign rightlimit = paginator.page | plus:3 %}
+                  {% endif%}
+                  {% assign value = paginator.total_pages | minus:1 %}
+                  
+                  {% assign value = paginator.total_pages | minus:1 %}
+                  {% if paginator.page == value %}
+                    {% assign startlimit = 3 %}
+                  {% elsif paginator.page == paginator.total_pages %}
+                    {% assign startlimit = 4 %}
+                  {% endif %}
+
+
+                  {% assign start = paginator.page | minus:startlimit %}
+                  {% assign end = paginator.page | minus:1 %}
+                  {% for index in (start..end) %}                  
+                  {% if index == 1 %}
+                  <li class="page-item">
+                    <a class="page-link new-pg-num" href="{{ site.baseurl }}/"><span>{{ index }}</span></a>
+                  </li>
+                  {% elsif index > 1 %}
+                  <li class="page-item">
+                    <a class="page-link new-pg-num" href="{{ site.baseurl }}/page{{ index }}"><span>{{ index }}</span></a>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                  
+                  {% if paginator.page == 1 %}
+                  <li class="page-item">
+                    <a class="page-link new-pg-num active" href="{{ site.baseurl }}/"><span>{{ paginator.page }}</span></a>
+                  </li>
+                  {% else %}
+                  <li class="page-item">
+                    <a class="page-link new-pg-num active" href="{{ site.baseurl }}/page{{ paginator.page }}/"><span>{{ paginator.page }}</span></a>
                   </li>
                   {% endif %}
                   
-                  <!-- <li class="page-item">
-                    <a class="page-link new-pg-num active" href="#"><span>01</span></a>
-                  </li>
+                  
+                  {% assign start = paginator.page | plus:1 %}
+                  {% assign end = rightlimit %}
+                  {% for index in (start..end) %}
+                  {% if index <= paginator.total_pages %}
                   <li class="page-item">
-                    <a class="page-link new-pg-num" href="#"><span>02</span></a>
-                  </li>
-                  <li class="page-item pg-num-1">
-                    <a class="page-link new-pg-num" href="#"><span>03</span></a>
-                  </li>
-                  <li class="page-item pg-num">
-                    <a class="page-link new-pg-num" href="#"><span>04</span></a>
-                  </li>
-                  <li class="page-item pg-num">
-                    <a class="page-link new-pg-num" href="#"><span>05</span></a>
-                  </li> -->
-                  {% if paginator.next_page %}
-                  <li class="page-item">
-                    <a class="page-link next-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Next</span></a>
+                    <a class="page-link new-pg-num" href="{{ site.baseurl }}/page{{ index }}"><span>{{ index }}</span></a>
                   </li>
                   {% endif %}
+                  {% endfor %}
+
+                  <li class="page-item">
+                    {% if paginator.page != paginator.total_pages %}
+                    <a class="page-link next-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Next</span></a>
+                    {% else %}
+                    <a class="page-link next-btn" href="{{ site.baseurl }}/page{{ paginator.total_pages }}/"><span>Next</span></a>
+                    {% endif %}
+                  </li>
                   
                 </ul>
               </nav>
