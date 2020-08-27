@@ -839,19 +839,11 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.form-group {
-  width: 350px;
-  position: relative;
-  margin: 0 0 0 50;
-}
-
 .form-group i {
   margin-top: -10px;
   margin-right: -50px;
 }
-.log-text {
-  width: 100px;
-}
+
 .social {
   width: 100px;
 }
@@ -864,16 +856,6 @@ input[type=submit]:hover {
   display: block;
   width: 100%;
   max-width: 420px;
-}
-.row.discussion-row{
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin-bottom: -70px;
-}
-.col-3.text-center {
-  flex: 1;
-  margin-top: -50px;
 }
 
 .comment {

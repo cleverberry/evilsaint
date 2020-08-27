@@ -146,18 +146,54 @@
           </div>
           <div class="row my-row">
             <div class="container card-containers">
-              <div class="card-columns">
-                <div class="card">
-                {{content}}
+              <div class="row gallary-content-row">
+                {{ content }}
+                <div class="col-4 three-img-col">
+                  <div class="row">
+                    <div class="col">
+                      <img class="right-col-three-img" src="/evilsaint/assets/images/adidas.png" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <img class="right-col-three-img" src="/evilsaint/assets/images/por1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <img class="right-col-three-img" src="/evilsaint/assets/images/nike1.png" alt="">
+                    </div>
+                  </div>
                 </div>
-                      
-                    
-                
               </div>
-              <div class=ads>                    
-                <img class="img-adidas" src="{{site.baseurl}}/assets/images/adidas.png" alt="" />
-                <img class="img-por" src="{{site.baseurl}}/assets/images/por1.png" alt="" />
-                <img class="img-nike" src="{{site.baseurl}}/assets/images/nike1.png" alt="" />
+            </div>
+          </div>
+          <div class="row discussion-row">
+            <div class="col-7">
+              <div class="row new-discussion-row">
+                <div class="col-3 text-center">
+                  <img src="/evilsaint/assets/images/newsample-person.png" alt="">
+                  <p class="log-text">Log in with:</p>
+                  <div>
+                    <span>
+                      <a class="comment-share" href="#"><img src="/evilsaint/assets/images/nav-share.png" alt=""></a>
+                    </span>
+                    <span>
+                      <a class="comment-twitter" href="#"><img src="/evilsaint/assets/images/nav-twitter.png" alt=""></a>
+                    </span>
+                    <span>
+                      <a class="comment-emailicon" href="#"><img src="/evilsaint/assets/images/nav-emailicon.png" alt=""></a>
+                    </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <form>
+                    <div class="form-group">
+                      <textarea class="form-control" id="discussion" placeholder="Start a discussion.."></textarea>
+                    </div>
+                    <button type="submit" class="btn post-submit">POST</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

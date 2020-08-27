@@ -1,44 +1,21 @@
 ---
 layout: inner
 ---
-<div class="row">
-  <div class="col-2"><img src="{{page.image}}" alt="" /></div>
-  <div class="col topic-heading-col">
-    <h3 class="topic-heading">{{ page.title }}</h3>
-    <span class="card-date">>{{ page.date | date_to_string }}</span>
+<div class="col-7 gallary-content-col">
+  <div class="row">
+    <div class="col-2"><img src="/evilsaint/assets/images/{{page.image}}" alt=""></div>
+    <div class="col topic-heading-col">
+      <h3 class="topic-heading">{{ page.title }}</h3>
+      <span class="card-date">{{ page.date | date_to_string }}</span>
+    </div>
   </div>
-</div>
-<hr />
-
-{{ content }}
-<br>
-<hr>
-<br>
-<div class="row discussion-row">
-      <div class="col-3 text-center">
-        <img src="{{site.baseurl}}/assets/images/newsample-person.png" alt="" />
-        <p class="log-text">Log in with:</p>
-        <div class="social">
-          <span>
-            <a class="comment-share" href="#" tartet="_blank"><img src="{{site.baseurl}}/assets/images/nav-share.png" alt="" /></a>
-          </span>
-          <span>
-            <a class="comment-twitter" href="#" tartet="_blank"><img src="{{site.baseurl}}/assets/images/nav-twitter.png" alt="" /></a>
-          </span>
-          <span>
-            <a class="comment-emailicon" href="#" target="_blank"><img src="{{site.baseurl}}/assets/images/nav-emailicon.png" alt="" /></a>
-          </span>
-        </div>
-      </div>
-
-      <!-- Comment Section -->
-      <div class="comment">
-        <form>
-          <div class="form-group1">
-            <textarea class="form-control" id="discussion" placeholder="Start a discussion.."></textarea>
-            <button type="submit" class="btn post-submit">POST</button>
-          </div>
-        </form>
-      </div>
-      <!-- Comment Section -->
+  <hr>
+  {{ content }}
+  <hr>
+  <div class="row text-right">
+    <div class="col card-btn-bottom">
+      <a href="#" class="btn card-btn-pro">Programming</a>
+      <a href="#" class="btn card-btn-pro">Coding</a>
+    </div>
+  </div>
 </div>
