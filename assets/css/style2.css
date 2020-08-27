@@ -672,24 +672,6 @@ button.btn.toggle-btn:focus {
   font-size: 16px;
 }
 
-.post-submit {
-  border: 1px solid #34464c;
-  width: 129px;
-  color: white;
-  background-color: #34464c;
-  font-size: 22px;
-  font-weight: 700;
-  float: right;
-  margin-bottom: 0;
-  margin-right: -205px;
-  position: absolute;
-  bottom: 17px;
-  right: 16px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 0px;
-}
 textarea#discussion::placeholder {
   font-size: 22px;
 }
@@ -882,5 +864,38 @@ input[type=submit]:hover {
   display: block;
   width: 100%;
   max-width: 420px;
-  
+}
+.row.discussion-row{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: -70px;
+}
+.col-3.text-center {
+  flex: 1;
+  margin-top: -50px;
+}
+
+.comment {
+  flex: 1;
+ 
+}
+.form-group1 {
+  padding: 0;
+  margin: 0;
+}
+.post-submit {
+  border: 1px solid #34464c;
+  width: 129px;
+  color: white;
+  padding: 0;
+  margin-top: -50;
+  background-color: #34464c;
+  font-size: 22px;
+  font-weight: 700;
+  float: right;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
 }
