@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+meta: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+image: card1-img.png
 date:   2020-08-26 12:38:04 +0800
 categories: jekyll update
 ---
