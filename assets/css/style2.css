@@ -877,7 +877,8 @@ input[type=submit]:hover {
 }
 
 .comment {
-  flex: 1;
+  flex: 2;
+  float: right;
  
 }
 .form-group1 {
