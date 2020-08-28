@@ -11,7 +11,7 @@ layout: default
       </div>
       <div class="col card-title-col">
          <a href="{{blog.url | prepend: site.baseurl}}"><h5 class="card-title">{{blog.title}}</h5></a>
-        <span class="card-date">{{blog.date}}</span>
+        <span class="card-date">{{ blog.date | date_to_string }}</span>
       </div>
     </div>
      <div class="card-body">
