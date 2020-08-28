@@ -340,6 +340,10 @@ img.img-por {
 .card-columns .card {
   margin-bottom: 1.75rem;
 }
+.ads {
+  margin-bottom: 1.75rem;
+  float: right;
+}
 a.page-link.prev-btn {
   border: 1px solid #34464c;
   border-radius: 50px !important;
