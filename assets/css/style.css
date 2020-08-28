@@ -492,6 +492,7 @@ a.page-link {
 
 ul.pagination {
   border: none;
+  margin: 20px;
 }
 
 a.page-link {
