@@ -887,3 +887,7 @@ input[type=submit]:hover {
   position: relative;
   left: -150px;
  }
+
+ .card-search {
+   margin-bottom: 1.75rem;
+ }
