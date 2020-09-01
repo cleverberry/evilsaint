@@ -393,6 +393,31 @@ a.page-link.next-btn span {
   top: 13px;
   left: 9px;
 }
+@media (max-width: 40000px) {
+  .card-columns {
+    column-count: 12;
+  }
+}
+@media (max-width: 3500px) {
+  .card-columns {
+    column-count: 6;
+  }
+}
+@media (max-width: 3000px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+@media (max-width: 2200px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+@media (max-width: 2000px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
 @media (max-width: 1550px) {
   .card-columns {
     column-count: 2;
