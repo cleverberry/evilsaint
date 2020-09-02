@@ -3,7 +3,7 @@ layout: inner
 ---
 <div class="col-7 gallary-content-col">
   <div class="row">
-    <div class="col-2"><img src="/evilsaint/assets/images/{{page.image}}" alt=""></div>
+    <div class="col-2"><img src="/assets/images/{{page.image}}" alt=""></div>
     <div class="col topic-heading-col">
       <h3 class="topic-heading">{{ page.title }}</h3>
       <span class="card-date">{{ page.date | date_to_string }}</span>
@@ -14,7 +14,7 @@ layout: inner
   <hr>
   <div class="row text-right">
     <div class="col card-btn-bottom">
-      <a href="{{ page.categories }}" class="btn card-btn-pro">{{ page.categories }}</a>
+      <a href="/{{ page.categories }}.html" class="btn card-btn-pro">{{ page.categories }}</a>
     </div>
   </div>
 </div>
