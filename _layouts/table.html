@@ -9,7 +9,7 @@
     <meta name="evilsaint" content="" />
 
     <title>{{site.title}}</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
@@ -369,20 +369,55 @@
     <!-- Menu Toggle Script -->
     <script>
         $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
         }
-        $(document).ready(function () {
-            $(".toggle-btn").click(function () {
-                $(".toggle-btn").text($(".toggle-btn").text() == "Dark Mode" ? "Light Mode" : "Dark Mode");
-            });
-        });
-        $(document).ready(cardResize);
-        $(window).on("resize", cardResize);
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    function myFunction() {
+     
+
+    }
+    $(document).ready(function () {
+      my_theme = getCookie("theme");
+      $(".toggle-btn").text(my_theme == "Dark Mode" ? "Light Mode" : "Dark Mode");
+      var element = document.body;
+      console.log("Starting with " + my_theme);
+      if(my_theme === "Dark Mode"){
+          element.classList.add("dark-mode");
+        } else {
+          element.classList.remove("dark-mode");
+        }
+
+      $(".toggle-btn").click(function () {
+        current_theme = $(".toggle-btn").text();
+        $(".toggle-btn").text($(".toggle-btn").text() == "Dark Mode" ? "Light Mode" : "Dark Mode");
+        document.cookie = "theme=" + current_theme;
+        console.log("SET to " + current_theme)
+
+        var element = document.body;
+        if(current_theme === "Dark Mode"){
+          element.classList.add("dark-mode");
+        } else {
+          element.classList.remove("dark-mode");
+        }
+      });
+    });
+    $(document).ready(cardResize);
+    $(window).on("resize", cardResize);
 
         function cardResize() {
             if ($(window).width() > 3000) {
