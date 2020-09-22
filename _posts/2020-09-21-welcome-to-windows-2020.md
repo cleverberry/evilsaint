@@ -16,19 +16,19 @@ This guide is going to take you through a number of components to get your machi
 
 Hit the Windows key and type "cmd".
 
-![]({{ site.baseurl }}/assets/images/article-images/elevated-cmd-prompt.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/elevated-cmd-prompt.png)
 
 Hold down `CTRL` + `SHIFT` and now hit the `Enter` key to open the command prompt as an elevated user. 
 
 Now hit the Windows key and type "powershell"
 
-![]({{ site.baseurl }}/assets/images/article-images/elevated-powershell-prompt.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/elevated-powershell-prompt.png)
 
 Hold down `CTRL` + `SHIFT` and now hit the `Enter` key to open the PowerShell prompt as an elevated user. 
 
 Windows Version
 
-![]({{ site.baseurl }}/assets/images/article-images/winver.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/winver.png)
 
 ## PowerShell Seven
 
@@ -40,19 +40,19 @@ iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
 
 Follow the Wizard to the step headed "Optional Actions" and check the selection to "Enable PowerShell remoting". I also like to select "Add 'Open here' context menus to Explorer". 
 
-![]({{ site.baseurl }}/assets/images/article-images/windows-7-install-wizard-optional-actions.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/windows-7-install-wizard-optional-actions.png)
 
 Select the "Launch PowerShell" in the bottom left of the next wizard. 
 
-![]({{ site.baseurl }}/assets/images/article-images/windows-7-install-wizard-launch-powershell.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/windows-7-install-wizard-launch-powershell.png)
 
 Now "Right Click" the PowerShell icon and select "Pin to taskbar". 
 
-![]({{ site.baseurl }}/assets/images/article-images/windows-7-install-wizard-pin-to-taskbard.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/windows-7-install-wizard-pin-to-taskbard.png)
 
 Now enter `$PSVersionTable` to confirm the version of PowerShell. 
 
-![]({{ site.baseurl }}/assets/images/article-images/windows-7-install-wizard-psversiontable.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/windows-7-install-wizard-psversiontable.png)
 
 
 @Todo 
@@ -86,7 +86,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRes
 ```
 
 
-![]({{ site.baseurl }}/assets/images/article-images/windows-7-enable-virtual-machine.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/windows-7-enable-virtual-machine.png)
 
 
 Setting version 2 of the Windows Subsystem for Linux to the default
@@ -102,11 +102,11 @@ This means you need to install the MSI another component.
 
 Go to [https://aka.ms/wsl2kernel](https://aka.ms/wsl2kernel)
 
-![]({{ site.baseurl }}/assets/images/article-images/download-wslv2-kernel.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/download-wslv2-kernel.png)
 
 Download by clicking the link "WSL2 Linux kernel update package for x64 machines"
 
-![]({{ site.baseurl }}/assets/images/article-images/click-installer-wslv2.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/click-installer-wslv2.png)
 
 
 If at this point you need to restart your virtual machine. 
@@ -123,7 +123,7 @@ wsl -l -v
 
 Listing versions we can see the difference
 
-![]({{ site.baseurl }}/assets/images/article-images/wsl-list-versions.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/wsl-list-versions.png)
 
 We will want to upgrade any wsl linux machines running version 1 (hyper-v method)
 
@@ -135,7 +135,7 @@ https://docs.microsoft.com/en-gb/windows/wsl/about
 wsl --set-version kali-linux 2
 ```
 
-![]({{ site.baseurl }}/assets/images/article-images/wslv2-conversion-in-process.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/wslv2-conversion-in-process.png)
 
 
 
@@ -154,12 +154,12 @@ Dism /Online /Cleanup-Image /RestoreHealth
 
 Install Code by typing `code .`
 
-![]({{ site.baseurl }}/assets/images/article-images/install-visual-studio-code.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/install-visual-studio-code.png)
 
 
 Now type `code .` again and watch as Visual Stuido opens up in the Windows Host showing files from the WSL
 
-![]({{ site.baseurl }}/assets/images/article-images/visual-studio-code.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/visual-studio-code.png)
 
 ## Docker for Windows
 
@@ -175,7 +175,7 @@ Requirements
 
 2) Double-click the blue "Get Docker Desktop for Windows (stable)" button to download the executable.
 
-![]({{ site.baseurl }}/assets/images/article-images/docker-installer.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/docker-installer.png)
 
 3) Double-Click the "Docker Desktop Installer.exe" to run the installer.
 
@@ -196,11 +196,11 @@ https://github.com/microsoft/terminal/releases/
 The new Shell
 
 
-![]({{ site.baseurl }}/assets/images/article-images/new-shell.PNG)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/new-shell.PNG)
 
 Pin to taskbar
 
-![]({{ site.baseurl }}/assets/images/article-images/pin-new-terminal-to-taskbar.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/pin-new-terminal-to-taskbar.png)
 
 
 ### Customisation
@@ -210,11 +210,11 @@ Pin to taskbar
 
 https://github.com/microsoft/cascadia-code/releases
 
-![]({{ site.baseurl }}/assets/images/article-images/cascadia-codes.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/cascadia-codes.png)
 
 Click "Install for all users"
 
-![]({{ site.baseurl }}/assets/images/article-images/install-fonts-for-all-users.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/install-fonts-for-all-users.png)
 
 #### Git
 
@@ -259,10 +259,10 @@ go get -u github.com/justjanne/powerline-go
 Install Hyper for Windows
 https://releases.hyper.is/download/win
 
-![]({{ site.baseurl }}/assets/images/article-images/install-hyper-for-windows.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/install-hyper-for-windows.png)
 
 With the Hypershell open, enter the following commands
-![]({{ site.baseurl }}/assets/images/article-images/hyper-shell.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/hyper-shell.png)
 
 
 
@@ -292,7 +292,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 Confirm the installation of Chocolatey
 
-![]({{ site.baseurl }}/assets/images/article-images/chocolatey-install-confirm-version.png)
+![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/chocolatey-install-confirm-version.png)
 
 Lets install some packages
 
