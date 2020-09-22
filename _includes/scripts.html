@@ -113,3 +113,29 @@
         json: '{{ site.baseurl }}/search.json'
     })
 </script>
+
+<script>
+    expressvpn_banner_list = [
+        'banner-bigbox-e0b01ec70755422701e5fe88ff2d1df1c26a539edc9994d83274acaec296f8fd.jpg',
+        'bestformovies-banner-square-71441a0163a8bf8773e04ac9ee495ac9817cb149e3fe8cd0aa8969fcb2f1af7a.jpg',
+        'expressvpn-sports-square-champions-league-1fed9a366a578d8585a7514ae4da0f826f7ec08042009d922c3d58dbea90497b.jpg',
+        'expressvpn-watch-tv-from-your-home-country-square-6d4e55a3cdc9ec1a8fd8c9f5689100a87853b45f5e70ab7e90698063645b9e92.jpg',
+        'hide-your-ip-address_proxysites-square-cbc8350f8935cf970289d7dc1125453648afc3e48276612493c59210b5fa3f68.jpg',
+        'ppc-banners-inline-rectangle-access-884ff79ffca141dc8ec0ef696289b1f6086b55fd8aa4e7d6622eb307930e652a.jpg',
+        'ppc-banners-inline-rectangle-android-966597d4dd600acf77f5007a8d703966a8706485b1984cd7eb440f3924f86048.jpg',
+        'ppc-banners-inline-rectanglemac-7d49cddb373e08b54fb58496bf8bb9bd369609d6a583ca1bef7ad6467693f5b8.jpg',
+        'ppc-banners-inline-rectangle-protect-d3a97834b0dbc28f2d7a5a208ff5dec98ee2e65d04e6dc26ec3fa339e4719672.jpg',
+        'ppc-banners-inline-rectangle-windows-abaf133a8dfdd5c963bdcf88285146ece15bd60ecceda3cc4936f3ca89d4321d.jpg'
+    ]
+
+    src = '/assets/images/banner_ads/expressvpn/'
+
+    for (i = 0; i < 3; i++) {
+        index = Math.floor(Math.random() * expressvpn_banner_list.length)
+        console.log(index)
+        $('.ad-' + (i+1)).attr('src', src + expressvpn_banner_list[index]);
+        $('.ad-' + (i+1)).attr('alt', expressvpn_banner_list[index]);
+        $('.ad-' + (i+1)).attr('id', expressvpn_banner_list[index]);
+        expressvpn_banner_list.splice(index, 1)
+    }
+</script>
