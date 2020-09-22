@@ -916,3 +916,7 @@ input[type=submit]:hover {
  .card-search {
    margin-bottom: 1.75rem;
  }
+
+ .ads {
+   cursor: pointer;
+ }
