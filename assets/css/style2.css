@@ -19,7 +19,7 @@
 .nav-search-row {
   background-color: #26363b;
   height: 130px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 input.nav-search::placeholder {
   color: white;

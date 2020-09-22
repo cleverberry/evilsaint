@@ -245,7 +245,7 @@ span.program-tags {
   line-height: 45px;
   padding-bottom: 30px;
 }
-.container.right-main-container {
+.container-fluid.right-main-container {
   min-width: 100%;
 }
 .content-text {
@@ -699,7 +699,7 @@ button#menu-toggle:focus {
     padding-bottom: 40px;
     font-family: "Myraid Pro";
   }
-  .container.right-main-container {
+  .container-fluid.right-main-container {
     width: 90%;
     min-width: 90%;
   }
