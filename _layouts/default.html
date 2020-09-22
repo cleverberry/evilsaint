@@ -5,103 +5,7 @@
 
 <body class="evail-saint">
   <div class="d-flex" id="wrapper">
-    <!-- Sidebar -->
-    <div class="bg-light" id="sidebar-wrapper">
-      <section class="left-top-section">
-        <!-- <button class="btn btn-primary navbar" id="menu-toggle"></button> -->
-
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <span class="main-logo-span">
-                <a href="{{site.baseurl}}/">
-                  <img class="main-logo" src="{{site.baseurl}}/assets/images/evilsaintshield-newlogo.png" alt="" />
-                </a>
-              </span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <h4 class="text-uppercase logo-sub-text">Let's Get Connected!</h4>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <p class="socio-sub-text text-center">Receive updates through your email</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <form>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter E-mail Address" />
-                  <i class="fa fa-arrow-right email-right" aria-hidden="true"></i>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="row categories-row">
-            <div class="col">
-              <h3>Categories</h3>
-              <hr />
-              <ul>
-                <li><a href="{{site.baseurl}}/coding/">Coding</a></li>
-                <li><a href="{{site.baseurl}}/programming/">Programming</a></li>
-                <li><a href="{{site.baseurl}}/hacking/">Hacking</a></li>
-                <li><a href="{{site.baseurl}}/security/">Security</a></li>
-                <li><a href="{{site.baseurl}}/news/">News</a></li>
-                <li><a href="{{site.baseurl}}/tools/">Tools</a></li>
-                <li><a href="{{site.baseurl}}/capture-the-flag/">Capture The Flag (CTF)</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row tags-row-left">
-            <div class="col">
-              <h3>Tags</h3>
-              <hr />
-
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/programming.html">Programming</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/coding.html">Coding</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/security.html">Security</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat.html">White Hat</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/tags.html">Tags</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/hex.html">Hex</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/hacking.html">Hacking</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/ethical-hacking.html">Ethical Hacking</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/code.html">Code</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/security.html">Security</a></button>
-              <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat.html">White Hat</a></button>
-            </div>
-          </div>
-
-          <div class="row justify-content-center about-me-row">
-            <div class="col">
-              <h3 class="about-heading">ABOUT ME</h3>
-            </div>
-          </div>
-          <div class="row person-row justify-content-center">
-            <div class="col-12 text-center">
-              <img src="{{site.baseurl}}/assets/images/VA2_copy.png" alt="person-img" />
-            </div>
-            <div class="col-12 text-center">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetrax. Etiam eget dila Sed.</p>
-            </div>
-            <div class="col-12 text-center">
-              <a href="{{site.baseurl}}/about.html">
-                <button class="btn left-read-more">Read More</button>
-              </a>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <p style="color: rgb(182, 182, 182)">This website uses cookies to enhance user experience.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- /#sidebar-wrapper -->
+    {% include sidebar.html %}
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -280,7 +184,7 @@
       return "";
     }
     function myFunction() {
-     
+
 
     }
     $(document).ready(function () {
@@ -288,11 +192,11 @@
       $(".toggle-btn").text(my_theme == "Dark Mode" ? "Light Mode" : "Dark Mode");
       var element = document.body;
       console.log("Starting with " + my_theme);
-      if(my_theme === "Dark Mode"){
-          element.classList.add("dark-mode");
-        } else {
-          element.classList.remove("dark-mode");
-        }
+      if (my_theme === "Dark Mode") {
+        element.classList.add("dark-mode");
+      } else {
+        element.classList.remove("dark-mode");
+      }
 
       $(".toggle-btn").click(function () {
         current_theme = $(".toggle-btn").text();
@@ -301,7 +205,7 @@
         console.log("SET to " + current_theme)
 
         var element = document.body;
-        if(current_theme === "Dark Mode"){
+        if (current_theme === "Dark Mode") {
           element.classList.add("dark-mode");
         } else {
           element.classList.remove("dark-mode");
@@ -352,8 +256,8 @@
 
   <!-- Configuration -->
   <script>
-    $(document).ready(function() {
-      
+    $(document).ready(function () {
+
     })
     SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
