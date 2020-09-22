@@ -1,225 +1,213 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="evilsaint" content="" />
 
-    <title>{{site.title}}</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+{% include head.html %}
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{"/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet" />
+<body class="evail-saint">
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light" id="sidebar-wrapper">
+      <section class="left-top-section">
+        <!-- <button class="btn btn-primary navbar" id="menu-toggle"></button> -->
 
-    <!-- Custom styles for this template -->
-    <link href="{{site.baseurl}}/assets/css/simple-sidebar.css" rel="stylesheet" />
-    <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet" />
-    <link href="{{site.baseurl}}/assets/css/style2.css" rel="stylesheet" />
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  
-    {% if page.url == "/404.html" %}
-    <meta http-equiv="refresh" content="5; url=/">
-    {% endif %}
-  </head>
-
-  <body class="evail-saint">
-    <div class="d-flex" id="wrapper">
-      <!-- Sidebar -->
-      <div class="bg-light" id="sidebar-wrapper">
-        <section class="left-top-section">
-          <!-- <button class="btn btn-primary navbar" id="menu-toggle"></button> -->
-
-          <div class="container">
-            <div class="row">
-              <div class="col text-center">
-                <span class="main-logo-span">
-                    <a href="{{site.baseurl}}/">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <span class="main-logo-span">
+                <a href="{{site.baseurl}}/">
                   <img class="main-logo" src="{{site.baseurl}}/assets/images/evilsaintshield-newlogo.png" alt="" />
-                    </a>
-                </span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <h4 class="text-uppercase logo-sub-text">Let's Get Connected!</h4>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <p class="socio-sub-text text-center">Receive updates through your email</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <form>
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail Address" />
-                    <i class="fa fa-arrow-right email-right" aria-hidden="true"></i>
-                  </div>
-                </form>
-              </div>
-            </div>
-          
-            <div class="row categories-row">
-              <div class="col">
-                <h3>Categories</h3>
-                <hr />
-                <ul>
-                  <li><a href="{{site.baseurl}}/coding/">Coding</a></li>
-                  <li><a href="{{site.baseurl}}/programming/">Programming</a></li>
-                  <li><a href="{{site.baseurl}}/hacking/">Hacking</a></li>
-                  <li><a href="{{site.baseurl}}/security/">Security</a></li>
-                  <li><a href="{{site.baseurl}}/news/">News</a></li>
-                  <li><a href="{{site.baseurl}}/tools/">Tools</a></li>
-                  <li><a href="{{site.baseurl}}/capture-the-flag/">Capture The Flag (CTF)</a></li>
-                  </ul>
-              </div>
-            </div>
-            <div class="row tags-row-left">
-              <div class="col">
-                <h3>Tags</h3>
-                <hr />
-
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/programming.html">Programming</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/coding.html">Coding</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/security.html">Security</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat.html">White Hat</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/tags.html">Tags</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/hex.html">Hex</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/hacking.html">Hacking</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/ethical-hacking.html">Ethical Hacking</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/code.html">Code</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/security.html">Security</a></button>
-                <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat.html">White Hat</a></button>
-              </div>
-            </div>
-
-            <div class="row justify-content-center about-me-row">
-              <div class="col">
-                <h3 class="about-heading">ABOUT ME</h3>
-              </div>
-            </div>
-            <div class="row person-row justify-content-center">
-              <div class="col-12 text-center">
-                <img src="{{site.baseurl}}/assets/images/VA2_copy.png" alt="person-img" />
-              </div>
-              <div class="col-12 text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetrax. Etiam eget dila Sed.</p>
-              </div>
-              <div class="col-12 text-center">
-                  <a href="{{site.baseurl}}/about.html">
-                <button class="btn left-read-more">Read More</button>
-                 </a>
-              </div>
+                </a>
+              </span>
             </div>
           </div>
-        </section>
-      </div>
-      <!-- /#sidebar-wrapper -->
+          <div class="row">
+            <div class="col">
+              <h4 class="text-uppercase logo-sub-text">Let's Get Connected!</h4>
+            </div>
+          </div>
 
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-        <button class="btn btn-primary navbar" id="menu-toggle"></button>
+          <div class="row">
+            <div class="col">
+              <p class="socio-sub-text text-center">Receive updates through your email</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter E-mail Address" />
+                  <i class="fa fa-arrow-right email-right" aria-hidden="true"></i>
+                </div>
+              </form>
+            </div>
+          </div>
 
-        <div class="container-fluid right-main-container">
-          <div class="row nav-search-row">
-            <div class="col-2 right-logo-col">
-                <a href="{{site.baseurl}}/">
+          <div class="row categories-row">
+            <div class="col">
+              <h3>Categories</h3>
+              <hr />
+              <ul>
+                <li><a href="{{site.baseurl}}/coding/">Coding</a></li>
+                <li><a href="{{site.baseurl}}/programming/">Programming</a></li>
+                <li><a href="{{site.baseurl}}/hacking/">Hacking</a></li>
+                <li><a href="{{site.baseurl}}/security/">Security</a></li>
+                <li><a href="{{site.baseurl}}/news/">News</a></li>
+                <li><a href="{{site.baseurl}}/tools/">Tools</a></li>
+                <li><a href="{{site.baseurl}}/capture-the-flag/">Capture The Flag (CTF)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row tags-row-left">
+            <div class="col">
+              <h3>Tags</h3>
+              <hr />
+
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/programming.html">Programming</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/coding.html">Coding</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/security.html">Security</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat.html">White Hat</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/tags.html">Tags</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/hex.html">Hex</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/hacking.html">Hacking</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/ethical-hacking.html">Ethical Hacking</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/code.html">Code</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/security.html">Security</a></button>
+              <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat.html">White Hat</a></button>
+            </div>
+          </div>
+
+          <div class="row justify-content-center about-me-row">
+            <div class="col">
+              <h3 class="about-heading">ABOUT ME</h3>
+            </div>
+          </div>
+          <div class="row person-row justify-content-center">
+            <div class="col-12 text-center">
+              <img src="{{site.baseurl}}/assets/images/VA2_copy.png" alt="person-img" />
+            </div>
+            <div class="col-12 text-center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetrax. Etiam eget dila Sed.</p>
+            </div>
+            <div class="col-12 text-center">
+              <a href="{{site.baseurl}}/about.html">
+                <button class="btn left-read-more">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <button class="btn btn-primary navbar" id="menu-toggle"></button>
+
+      <div class="container-fluid right-main-container">
+        <div class="row nav-search-row">
+          <div class="col-2 right-logo-col">
+            <a href="{{site.baseurl}}/">
               <img src="{{site.baseurl}}/assets/images/white-logo.png" class="nav-img" alt="ES-Wordmark" />
             </a>
-            </div>
-            <div class="col-6 top-search-col">
-              <div class="input-group" id="search-container">
-                <input type="text" id="search-input" class="form-control nav-search" placeholder="Search"
-                  aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2"><img
-                      src="{{site.baseurl}}/assets/images/nav-serach.png" alt="" /></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 nav-icons">
-              <span class="header-share"><a href="https://github.com" target="_blank"><img src="{{site.baseurl}}/assets/images/nav-share.png" alt="" /></a></span>
-              <span class="header-twitter"><a href="https://twitter.com" target="_blank"><img src="{{site.baseurl}}/assets/images/nav-twitter.png" alt="" /></a></span>
-              <span class="header-mail"><a href="{{site.baseurl}}/contact.html"><img src="{{site.baseurl}}/assets/images/nav-emailicon.png" alt="" /></a></span>
-              <button class="btn toggle-btn" onclick="myFunction()">Dark Mode</button>
-            </div>
           </div>
-          <div class="row my-row">
-            <div class="container card-containers">
-              <h1>
-                <ul id="results-container"></ul>
-              </h1>
-              <div class="row gallary-content-row">
-                {{ content }}
-                <div class="col-4 three-img-col">
-                  <div class="row">
-                    <div class="col">
-                      <img class="right-col-three-img" src="/assets/images/adidas.png" alt="">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <img class="right-col-three-img" src="/assets/images/por1.png" alt="">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <img class="right-col-three-img" src="/assets/images/nike1.png" alt="">
-                    </div>
-                  </div>
-                </div>
+          <div class="col-6 top-search-col">
+            <div class="input-group" id="search-container">
+              <input type="text" id="search-input" class="form-control nav-search" placeholder="Search"
+                aria-label="Recipient's username" aria-describedby="basic-addon2" />
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2"><img
+                    src="{{site.baseurl}}/assets/images/nav-serach.png" alt="" /></span>
               </div>
             </div>
           </div>
-          <div class="row discussion-row">
-            <div class="col-7">
-              <div class="row new-discussion-row">
-                <div class="col-3 text-center">
-                  <img src="/assets/images/newsample-person.png" alt="">
-                  <p class="log-text">Log in with:</p>
-                  <div>
-                    <span>
-                      <a class="comment-share" href="#"><img src="/assets/images/nav-share.png" alt=""></a>
-                    </span>
-                    <span>
-                      <a class="comment-twitter" href="#"><img src="/assets/images/nav-twitter.png" alt=""></a>
-                    </span>
-                    <span>
-                      <a class="comment-emailicon" href="#"><img src="/assets/images/nav-emailicon.png" alt=""></a>
-                    </span>
+          <div class="col-3 nav-icons">
+            <span class="header-share"><a href="https://github.com" target="_blank"><img
+                  src="{{site.baseurl}}/assets/images/nav-share.png" alt="" /></a></span>
+            <span class="header-twitter"><a href="https://twitter.com" target="_blank"><img
+                  src="{{site.baseurl}}/assets/images/nav-twitter.png" alt="" /></a></span>
+            <span class="header-mail"><a href="{{site.baseurl}}/contact.html"><img
+                  src="{{site.baseurl}}/assets/images/nav-emailicon.png" alt="" /></a></span>
+            <button class="btn toggle-btn" onclick="myFunction()">Dark Mode</button>
+          </div>
+        </div>
+        <div class="row my-row">
+          <div class="container card-containers">
+            <h1>
+              <ul id="results-container"></ul>
+            </h1>
+            <div class="row gallary-content-row">
+              {{ content }}
+              <div class="col-4 three-img-col">
+                <div class="row">
+                  <div class="col">
+                    <img class="right-col-three-img" src="/assets/images/adidas.png" alt="">
                   </div>
                 </div>
-                <div class="col">
-                  <form>
-                    <div class="form-group">
-                      <textarea class="form-control" id="discussion" placeholder="Start a discussion.."></textarea>
-                    </div>
-                    <button type="submit" class="btn post-submit">POST</button>
-                  </form>
+                <div class="row">
+                  <div class="col">
+                    <img class="right-col-three-img" src="/assets/images/por1.png" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img class="right-col-three-img" src="/assets/images/nike1.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- /#page-content-wrapper -->
+        <div class="row discussion-row">
+          <div class="col-7">
+            <div class="row new-discussion-row">
+              <div class="col-3 text-center">
+                <img src="/assets/images/newsample-person.png" alt="">
+                <p class="log-text">Log in with:</p>
+                <div>
+                  <span>
+                    <a class="comment-share" href="#"><img src="/assets/images/nav-share.png" alt=""></a>
+                  </span>
+                  <span>
+                    <a class="comment-twitter" href="#"><img src="/assets/images/nav-twitter.png" alt=""></a>
+                  </span>
+                  <span>
+                    <a class="comment-emailicon" href="#"><img src="/assets/images/nav-emailicon.png" alt=""></a>
+                  </span>
+                </div>
+              </div>
+              <div class="col">
+                <form>
+                  <div class="form-group">
+                    <textarea class="form-control" id="discussion" placeholder="Start a discussion.."></textarea>
+                  </div>
+                  <button type="submit" class="btn post-submit">POST</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- /#page-content-wrapper -->
     </div>
-    <!-- /#wrapper -->
+  </div>
+  <!-- /#wrapper -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url}}"></script>
-    <script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url}}"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Menu Toggle Script -->
-    <script>
-      $("#menu-toggle").click(function (e) {
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url}}"></script>
+  <script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url}}"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
@@ -239,7 +227,7 @@
       return "";
     }
     function myFunction() {
-     
+
 
     }
     $(document).ready(function () {
@@ -247,11 +235,11 @@
       $(".toggle-btn").text(my_theme == "Dark Mode" ? "Light Mode" : "Dark Mode");
       var element = document.body;
       console.log("Starting with " + my_theme);
-      if(my_theme === "Dark Mode"){
-          element.classList.add("dark-mode");
-        } else {
-          element.classList.remove("dark-mode");
-        }
+      if (my_theme === "Dark Mode") {
+        element.classList.add("dark-mode");
+      } else {
+        element.classList.remove("dark-mode");
+      }
 
       $(".toggle-btn").click(function () {
         current_theme = $(".toggle-btn").text();
@@ -260,7 +248,7 @@
         console.log("SET to " + current_theme)
 
         var element = document.body;
-        if(current_theme === "Dark Mode"){
+        if (current_theme === "Dark Mode") {
           element.classList.add("dark-mode");
         } else {
           element.classList.remove("dark-mode");
@@ -270,47 +258,47 @@
     $(document).ready(cardResize);
     $(window).on("resize", cardResize);
 
-      function cardResize() {
-        if ($(window).width() > 3000) {
-          $(".card-containers").each(function () {
-            var highestBox = 0;
+    function cardResize() {
+      if ($(window).width() > 3000) {
+        $(".card-containers").each(function () {
+          var highestBox = 0;
 
-            $(this)
-              .find(".main-card-body")
-              .each(function () {
-                if ($(this).height() > highestBox) {
-                  highestBox = $(this).height();
-                }
-              });
+          $(this)
+            .find(".main-card-body")
+            .each(function () {
+              if ($(this).height() > highestBox) {
+                highestBox = $(this).height();
+              }
+            });
 
-            $(this).find(".main-card-body").height(highestBox);
-          });
-        } else {
-          $(".main-card-body").css("height", "auto");
-        }
+          $(this).find(".main-card-body").height(highestBox);
+        });
+      } else {
+        $(".main-card-body").css("height", "auto");
       }
-    </script>
-     <!-- Script pointing to search-script.js -->
+    }
+  </script>
+  <!-- Script pointing to search-script.js -->
   <script src="{{ site.baseurl }}/assets/js/search-script.js" type="text/javascript"></script>
 
   <script>
-    $('#search-input').keyup(function() {
+    $('#search-input').keyup(function () {
       var text = $('#search-input').val()
-      
-      if(text === '') {
+
+      if (text === '') {
         $('.row.gallary-content-row').show()
         $('.row.discussion-row').show()
       } else {
         $('.row.gallary-content-row').hide()
         $('.row.discussion-row').hide()
       }
-      
+
     });
   </script>
 
   <!-- Configuration -->
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('img').addClass('img-fluid')
     })
     SimpleJekyllSearch({
@@ -319,6 +307,6 @@
       json: '{{ site.baseurl }}/search.json'
     })
   </script>
-  </body>
-</html>
+</body>
 
+</html>
