@@ -6,4 +6,4 @@ vendor
 ruby
 ruby/*
 Gemfile.lock
-scripts\chromedriver.exe
+scripts/chromedriver.exe
