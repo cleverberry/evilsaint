@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="evail-saint">
+    <div class="d-flex" id="wrapper">
+        {% include sidebar.html %}
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button class="btn btn-primary navbar" id="menu-toggle"></button>
+
+            <div class="container-fluid right-main-container">
+                <div class="row nav-search-row">
+                    <div class="col-2 right-logo-col">
+                        <a href="{{site.baseurl}}/">
+                            <img src="{{site.baseurl}}/assets/images/white-logo.png" class="nav-img"
+                                alt="ES-Wordmark" />
+                        </a>
+                    </div>
+                    <div class="col-6 top-search-col">
+                        <div class="input-group" id="search-container">
+                            <input type="text" id="search-input" class="form-control nav-search" placeholder="Search"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2"><img
+                                        src="{{site.baseurl}}/assets/images/nav-serach.png" alt="" /></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 nav-icons">
+                        <span class="header-share"><a href="https://github.com" target="_blank"><img
+                                    src="{{site.baseurl}}/assets/images/nav-share.png" alt="" /></a></span>
+                        <span class="header-twitter"><a href="https://twitter.com" target="_blank"><img
+                                    src="{{site.baseurl}}/assets/images/nav-twitter.png" alt="" /></a></span>
+                        <span class="header-mail"><a href="{{site.baseurl}}/contact.html"><img
+                                    src="{{site.baseurl}}/assets/images/nav-emailicon.png" alt="" /></a></span>
+                        <button class="btn toggle-btn" onclick="myFunction()">Dark Mode</button>
+                    </div>
+                </div>
+                <div class="row my-row">
+                    <div class="container card-containers">
+                        <h1>
+                            <ul id="results-container"></ul>
+                        </h1>
+                        <h1 style="margin-bottom: 30px;">Capture The Flag (CTF)</h1>
+                        <hr>
+                        <div class="row gallary-content-row">
+                            {{ content }}
+                            <div class="col-4 three-img-col">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="ads right-col-three-img" src="/assets/images/adidas.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="ads right-col-three-img" src="/assets/images/por1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="ads right-col-three-img" src="/assets/images/nike1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    {% include scripts.html %}
+</body>
+
+</html>
