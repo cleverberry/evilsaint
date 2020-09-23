@@ -334,7 +334,6 @@ p.card-text {
   color: white;
 }
 img.img-por {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 .card-columns .card {
@@ -920,3 +919,7 @@ input[type=submit]:hover {
  .ads {
    cursor: pointer;
  }
+
+.ad-1 {
+  margin-bottom: 20px;
+}
