@@ -4,5 +4,269 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'UA-178431501-1');
+    gtag('config', 'UA-178431501-1', {
+        'custom_map': {
+            'dimension1': 'timestamp',
+            // 'dimension2': 'clickid',
+            // 'dimension3': 'tab_source',
+            // 'dimension4': 'referral_url',
+            // 'dimension5': 'session_id',
+            // 'dimension6': 'guid'
+        }
+    });
+
+    function browsingBehavior() {
+
+        // Set to false if you only want to register "BACK/FORWARD"
+        // if either button was pressed.
+        var detailedBackForward = true;
+
+        // Set expiration of tab count in milliseconds. The recommended default is
+        // 72 hours (259200000 ms). Set to 0 if you don't want to expire the tab count.
+        var expireTabs = 259200000;
+
+        if (!!window.Storage) {
+
+            var openTabs = JSON.parse(localStorage.getItem('_tab_ids')) || [],
+                tabId = sessionStorage.getItem('_tab_id'),
+                navPath = JSON.parse(sessionStorage.getItem('_nav_path')),
+                curPage = document.location.href,
+                newTab = false,
+                origin = document.location.origin;
+
+            var tabCount,
+                redirectCount,
+                navigationType,
+                prevInStack,
+                lastInStack,
+                payload,
+                expiration,
+                newTabId;
+
+            var clearExpired = function (tabs) {
+
+                if (expireTabs === 0) { return tabs; }
+                return tabs.filter(function (tab) {
+                    try {
+                        expiration = parseInt(tab.split('_')[1], 10);
+                        return expiration > (new Date().getTime());
+                    } catch (e) {
+                        return false;
+                    }
+                });
+
+            };
+
+            var updateTabExpiration = function (tabId) {
+
+                if (expireTabs === 0) { return tabId; }
+                try {
+                    newTabId = tabId.split('_');
+                    expiration = parseInt(newTabId[1], 10);
+                    if (expiration > new Date().getTime()) {
+                        return tabId;
+                    } else {
+                        newTabId = newTabId[0] + '_' + (new Date().getTime() + expireTabs);
+                        sessionStorage.setItem('_tab_id', newTabId);
+                        return newTabId;
+                    }
+                } catch (e) {
+                    return tabId;
+                }
+
+            };
+
+            var getBackForwardNavigation = function () {
+
+                if (detailedBackForward === false) {
+                    return 'BACK/FORWARD';
+                }
+
+                if (navPath.length < 2) {
+                    return 'FORWARD';
+                }
+
+                prevInStack = navPath[navPath.length - 2];
+                lastInStack = navPath[navPath.length - 1];
+
+                if (prevInStack === curPage || lastInStack === curPage) {
+                    return 'BACK';
+                } else {
+                    return 'FORWARD';
+                }
+
+            };
+
+            var removeTabOnUnload = function () {
+
+                var index;
+
+                // Get the most recent values from storage
+                openTabs = JSON.parse(localStorage.getItem('_tab_ids')) || [];
+                tabId = sessionStorage.getItem('_tab_id');
+
+                openTabs = clearExpired(openTabs);
+
+                if (openTabs.length && tabId !== null) {
+                    index = openTabs.indexOf(tabId);
+                    if (index > -1) {
+                        openTabs.splice(index, 1);
+                    }
+                    localStorage.setItem('_tab_ids', JSON.stringify(openTabs));
+                }
+
+            };
+
+            var generateTabId = function () {
+
+                // From https://stackoverflow.com/a/8809472/2367037
+                var d = new Date().getTime();
+                if (typeof performance !== 'undefined' && typeof performance.now === 'function') {
+                    d += performance.now(); //use high-precision timer if available
+                }
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                    var r = (d + Math.random() * 16) % 16 | 0;
+                    d = Math.floor(d / 16);
+                    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+                }) + (expireTabs > 0 ? '_' + (new Date().getTime() + expireTabs) : '');
+
+            };
+
+            var validNavigation = function (type, newTab) {
+
+                // Return false if new tab and any other navigation type than
+                // NAVIGATE or OTHER. Otherwise return true.
+                return !(newTab === true && (type !== 0 && type !== 255));
+
+            };
+
+            if (tabId === null) {
+                tabId = generateTabId();
+                newTab = true;
+                sessionStorage.setItem('_tab_id', tabId);
+            } else {
+                tabId = updateTabExpiration(tabId);
+            }
+
+            openTabs = clearExpired(openTabs);
+
+            if (openTabs.indexOf(tabId) === -1) {
+                openTabs.push(tabId);
+                localStorage.setItem('_tab_ids', JSON.stringify(openTabs));
+            }
+
+            tabCount = openTabs.length;
+
+            if (!!window.PerformanceNavigation) {
+                navPath = navPath || [];
+                redirectCount = window.performance.navigation.redirectCount;
+                // Only track new tabs if type is NAVIGATE or OTHER
+                if (validNavigation(window.performance.navigation.type, newTab)) {
+                    switch (window.performance.navigation.type) {
+                        case 0:
+                            navigationType = 'NAVIGATE';
+                            navPath.push(curPage);
+                            break;
+                        case 1:
+                            navigationType = 'RELOAD';
+                            if (navPath.length === 0 || navPath[navPath.length - 1] !== curPage) {
+                                navPath.push(curPage);
+                            }
+                            break;
+                        case 2:
+                            navigationType = getBackForwardNavigation();
+                            if (navigationType === 'FORWARD') {
+                                // Only add to navigation if not coming from external domain
+                                if (document.referrer.indexOf(origin) > -1) {
+                                    navPath.push(curPage);
+                                }
+                            } else if (navigationType === 'BACK') {
+                                // Only clear from navigation if not returning from external domain
+                                if (lastInStack !== curPage) {
+                                    navPath.pop();
+                                }
+                            } else {
+                                navPath.push(curPage);
+                            }
+                            break;
+                        default:
+                            navigationType = 'OTHER';
+                            navPath.push(curPage);
+                    }
+                } else {
+                    navPath.push(curPage);
+                }
+                sessionStorage.setItem('_nav_path', JSON.stringify(navPath));
+            }
+
+            window.addEventListener('beforeunload', removeTabOnUnload);
+
+            payload = {
+                tabCount: tabCount,
+                redirectCount: redirectCount,
+                navigationType: navigationType,
+                newTab: newTab === true ? 'New' : 'Existing',
+                tabId: tabId.replace(/_.+/, '')
+            };
+        }
+        return payload;
+    }
+
+
+    function get_timestamp() {
+        // Get local time as ISO string with offset at the end
+        var now = new Date();
+        var tzo = -now.getTimezoneOffset();
+        var dif = tzo >= 0 ? '+' : '-';
+        var pad = function (num) {
+            var norm = Math.abs(Math.floor(num));
+            return (norm < 10 ? '0' : '') + norm;
+        };
+        return now.getFullYear()
+            + '-' + pad(now.getMonth() + 1)
+            + '-' + pad(now.getDate())
+            + 'T' + pad(now.getHours())
+            + ':' + pad(now.getMinutes())
+            + ':' + pad(now.getSeconds())
+            + '.' + pad(now.getMilliseconds())
+            + dif + pad(tzo / 60)
+            + ':' + pad(tzo % 60);
+    }
+
+    function get_session_id() { // Public Domain/MIT
+        var d = new Date().getTime();
+        if (typeof performance !== 'undefined' && typeof performance.now === 'function') {
+            d += performance.now(); //use high-precision timer if available
+        }
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = (d + Math.random() * 16) % 16 | 0;
+            d = Math.floor(d / 16);
+            return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+        });
+    }
+
+    function get_guid() {
+        try {
+            var trackers = ga.getAll();
+            var i, len;
+            for (i = 0, len = trackers.length; i < len; i += 1) {
+                if (trackers[i].get('trackingId') === 'UA-176327753-1') {
+                    return trackers[i].get('clientId');
+                }
+            }
+        } catch (e) { }
+        return 'false';
+    }
+
+    // Sends the custom dimension to Google Analytics.
+    gtag('event', 'evilsaint_event',
+        {
+            'timestamp': get_timestamp(),                   //collects the timestamp of the user browser
+            // 'clickid': browsingBehavior().navigationType,     //allows you to track which buttons and links (assuming they have an ID element) were clicked on a page
+            // 'tab_source': browsingBehavior().newTab,          //so you can tell if the user opened a new tab or the tab was already open before navigating to your site
+            // 'referral_url': document.referrer,              //exactly as it sounds, the page they were on before they clicked to land on your page
+            // 'session_id': get_session_id(),                 //this uses the cookie that google generates to track your session through the pages
+            // 'guid': get_guid()                              //track users over multiple sessions
+        }
+    );
 </script>
