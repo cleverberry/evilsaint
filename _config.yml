@@ -58,3 +58,4 @@ plugins:
 #   - vendor/ruby/
 
 permalink: pretty
+highlighter: pygments

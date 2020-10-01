@@ -868,6 +868,8 @@ button#menu-toggle:focus {
   font-family: "Open Sans", sans-serif;
 }
 
+pre, code { font-family: Hack, monospace; }
+
 /* .grid {
   display: grid;
   grid-gap: 10px;

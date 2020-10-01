@@ -7,7 +7,6 @@ image: card1-img.png
 date: 21 September 2020
 tags:
 ---
-
 # Welcome to Windows 2020
 
 This guide is going to take you through a number of components to get your machine ready for subsequent parts of this guide. 
@@ -34,9 +33,10 @@ Windows Version
 
 
 Quick one-liner to install the latest version (PowerShell 7 is current at time of print) on Windows
-```
+{% highlight PowerShell %}
 iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
-```
+{% endhighlight %}
+
 
 Follow the Wizard to the step headed "Optional Actions" and check the selection to "Enable PowerShell remoting". I also like to select "Add 'Open here' context menus to Explorer". 
 
@@ -58,9 +58,9 @@ Now enter `$PSVersionTable` to confirm the version of PowerShell.
 @Todo 
 
 To install on Linux
-```
+{% highlight PowerShell %}
 wget https://aka.ms/install-powershell.sh; sudo bash install-powershell.sh; rm install-powershell.sh
-```
+{% endhighlight %}
 
 
 ## WSL
@@ -74,25 +74,25 @@ Next, we will install the Windows Subsystem for Linux and the VirtualMachinePlat
 Dism vs Enable-WindowsOptionalFeature
 
 
-```
+{% highlight PowerShell %}
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
+{% endhighlight %}
 
 
-```
+{% highlight PowerShell %}
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
-```
+{% endhighlight %}
 
 
 ![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/windows-7-enable-virtual-machine.png)
 
 
 Setting version 2 of the Windows Subsystem for Linux to the default
-```
+{% highlight PowerShell %}
 wsl –set-default-version 2
-```
+{% endhighlight %}
 
 If you get an error message saying 
     
@@ -110,16 +110,16 @@ Download by clicking the link "WSL2 Linux kernel update package for x64 machines
 
 
 If at this point you need to restart your virtual machine. 
-```
+{% highlight PowerShell %}
 restart-computer -Confirm
-```
+{% endhighlight %}
 
 
 List various versions of Linux 
-```
+{% highlight PowerShell %}
 wsl --list
 wsl -l -v
-```
+{% endhighlight %}
 
 Listing versions we can see the difference
 
@@ -131,25 +131,25 @@ Reasons to upgrade to WSLv2
 https://docs.microsoft.com/en-gb/windows/wsl/about
 
 
-```
+{% highlight PowerShell %}
 wsl --set-version kali-linux 2
-```
+{% endhighlight %}
 
 ![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/wslv2-conversion-in-process.png)
 
 
 
 Run the Kali Linux Distribution
-```
+{% highlight PowerShell %}
 wsl -d kali-linux
-```
+{% endhighlight %}
 
 ### Debugging
 
-```
+{% highlight PowerShell %}
 wsl --shutdown
 Dism /Online /Cleanup-Image /RestoreHealth
-```
+{% endhighlight %}
 
 
 Install Code by typing `code .`
@@ -226,34 +226,34 @@ Posh-Git adds Git status information to your prompt as well as tab-completion fo
 
 PSReadline lets you customize the command line editing environment in PowerShell.
 
-```
+{% highlight PowerShell %}
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
-```
+{% endhighlight %}
 
 PowerShell Core
-```
+{% highlight PowerShell %}
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
-```
+{% endhighlight %}
 
 
 Oh My Posh Themes
 Pick a theme https://github.com/JanDeDobbeleer/oh-my-posh#themes
-```
+{% highlight PowerShell %}
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme Paradox
-```
+{% endhighlight %}
 
 
 Customise your Kali
 
 
 Install Powerline
-```
+{% highlight PowerShell %}
 sudo apt install golang-go
 go get -u github.com/justjanne/powerline-go
-```
+{% endhighlight %}
 
 
 Install Hyper for Windows
@@ -286,9 +286,9 @@ The defaults.json file contains all the default configuration values for the ter
 ## Install Chocolatey
 
 From an elevated PowerShell Prompt
-```
+{% highlight PowerShell %}
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-```
+{% endhighlight %}
 
 Confirm the installation of Chocolatey
 
@@ -296,9 +296,9 @@ Confirm the installation of Chocolatey
 
 Lets install some packages
 
-```
+{% highlight PowerShell %}
 choco install wsl-kalilinux
-```
+{% endhighlight %}
 
 
 ## FireEye Commando-vm
@@ -313,7 +313,7 @@ Use my custom profile evilsaint.json.
 <a href="evilsaint.json" target="_blank">Custom Profile</a>
 
 My main additions are 
-```
+{% highlight PowerShell %}
 {"name": "wsl.fireeye"},
 {"name": "hyperv.fireeye"},
 {"name": "markdownmonster"},
@@ -322,22 +322,22 @@ My main additions are
 {"name": "wsl-debiangnulinux"},
 {"name": "microsoft-windows-terminal"},
 {"name": "everything"},
-```
+{% endhighlight %}
 
 I like to remove
-```
+{% highlight PowerShell %}
 {"name": "burp.free.fireeye"},
-```
+{% endhighlight %}
 
 
 
-```
+{% highlight PowerShell %}
 cinst install <package>
-```
+{% endhighlight %}
 
-```
+{% highlight PowerShell %}
 cup all
-```
+{% endhighlight %}
 
 
 
@@ -348,7 +348,7 @@ cup all
 ### Kali Machine
 
 
-```
+{% highlight PowerShell %}
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get clean
@@ -356,7 +356,7 @@ sudo apt-get --yes --force-yes install kali-desktop-xfce xorg xrdp
 sed -i 's/port=3389/port=3390/g' /etc/xrdp/xrdp.ini
 sudo apt install kali-win-kex
 sudo apt install kali-linux-large
-```
+{% endhighlight %}
 
 
 
