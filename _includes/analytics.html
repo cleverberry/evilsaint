@@ -270,3 +270,24 @@
         }
     );
 </script>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-178431501-1', {
+        'custom_map': {
+            // 'dimension1': 'timestamp',
+            'dimension2': 'clickid',
+            // 'dimension3': 'tab_source',
+            // 'dimension4': 'referral_url',
+            // 'dimension5': 'session_id',
+            // 'dimension6': 'guid'
+        }})
+        $('.ads').on('click', function() {
+            elementId = $(this).attr('id')
+            gtag('event','evilsaint_click_event', { 'clickid': elementId })
+            console.log($(this).attr('id') + ' clicked')
+        })
+    });
+    </script>
