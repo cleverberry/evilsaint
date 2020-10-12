@@ -384,6 +384,8 @@ ditto
 ## References
 
 
-https://www.ivaylopavlov.com/setting-up-windows-terminal-wsl-and-oh-my-zsh/#.X2TSmz-Smud
-https://blog.stealthbits.com/commando-vm-installation-configuration/
-https://www.kali.org/docs/wsl/win-kex/
+[Setting Up Windows Terminal WSL](https://www.ivaylopavlov.com/setting-up-windows-terminal-wsl-and-oh-my-zsh/#.X2TSmz-Smud)
+
+[Commando VM Installation Configuration](https://blog.stealthbits.com/commando-vm-installation-configuration/)
+
+[Win-Kex](https://www.kali.org/docs/wsl/win-kex/)
