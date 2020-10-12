@@ -18,7 +18,6 @@ dest_file = open(DEST_FILE, 'w+', encoding="utf-8")
 lines = source_file.readlines()
 
 for line in lines:
-
     driver.get(line)
     about = 'No available description'
     try:
@@ -27,13 +26,17 @@ for line in lines:
         print(about)
     except:
         print("Loading took too much time!")
-
+    
     index = line.rfind('/')
     name = line[index+1:-1]
-    org = line[:index]
+    print(name)
+    org = line[19:index]
+    print(org)
     link = 'https://evilsaint.co.uk/tools/github/' + org + '-' + name
+    print(link)
     template = '<li class="list-group-item"><a href="' + link + '" target="_blank" data-toggle="tooltip" data-placement="bottom" title="' + about + '">' + name + '</a></li>'
     dest_file.write(template + '\n')
+    break
 
 dest_file.close()
 source_file.close()
