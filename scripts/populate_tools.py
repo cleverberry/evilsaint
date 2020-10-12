@@ -36,7 +36,6 @@ for line in lines:
     print(link)
     template = '<li class="list-group-item"><a href="' + link + '" target="_blank" data-toggle="tooltip" data-placement="bottom" title="' + about + '">' + name + '</a></li>'
     dest_file.write(template + '\n')
-    break
 
 dest_file.close()
 source_file.close()
