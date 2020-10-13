@@ -26,13 +26,14 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <form>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeOdOi5iGj-rLz6d72FEw14O9B2Il9BuEavlYjDtxhKpyYNlg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter E-mail Address" />
-                            <i class="fa fa-arrow-right email-right" aria-hidden="true"></i>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail Address" name="entry.1132898242"/>
+                            <i id="submit-form" class="fa fa-arrow-right email-right" aria-hidden="true"></i>
                         </div>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
 

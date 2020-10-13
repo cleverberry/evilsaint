@@ -132,9 +132,22 @@
 
     for (i = 0; i < 3; i++) {
         index = Math.floor(Math.random() * expressvpn_banner_list.length)
-        $('.ad-' + (i+1)).attr('src', src + expressvpn_banner_list[index]);
-        $('.ad-' + (i+1)).attr('alt', expressvpn_banner_list[index]);
-        $('.ad-' + (i+1)).attr('id', expressvpn_banner_list[index]);
+        $('.ad-' + (i + 1)).attr('src', src + expressvpn_banner_list[index]);
+        $('.ad-' + (i + 1)).attr('alt', expressvpn_banner_list[index]);
+        $('.ad-' + (i + 1)).attr('id', expressvpn_banner_list[index]);
         expressvpn_banner_list.splice(index, 1)
     }
+</script>
+<!-- This script if for the submission of email form. -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#gform').on('submit', function (e) {
+            $('#exampleInputEmail1').val("");
+        })
+
+        $('#submit-form').on('click', function (e) {
+            document.querySelector('#gform').submit()
+            $('#exampleInputEmail1').val("");
+        })
+    })
 </script>
