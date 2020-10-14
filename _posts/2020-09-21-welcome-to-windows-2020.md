@@ -7,6 +7,7 @@ image: card1-img.png
 date: 21 September 2020
 tags:
 ---
+
 # Welcome to Windows 2020
 
 This guide is going to take you through a number of components to get your machine ready for subsequent parts of this guide. 
@@ -367,7 +368,6 @@ Run two version
 Run Win-KeX
 * Windows mode
 * seamless mode
-
 
 
 ## Customise Toys

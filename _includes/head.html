@@ -29,4 +29,8 @@
     {% endif %}
 
     {% include analytics.html %}
+
+    {% if page.layout == 'post' %}
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css">
+    {% endif %}
 </head>
