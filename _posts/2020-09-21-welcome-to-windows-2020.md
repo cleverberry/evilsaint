@@ -382,15 +382,15 @@ Run Win-KeX
 
 ## Customise Toys
 
-Groupy
-Taskbar X
-T Clock
-Power Toys
-Everything
-Rocket / Launcher
-wox
-sharex
-ditto
+Groupy<br>
+Taskbar X<br>
+T Clock<br>
+Power Toys<br>
+Everything<br>
+Rocket / Launcher<br>
+wox<br>
+sharex<br>
+ditto<br>
 
 <hr class="hr-reference">
 ## References
