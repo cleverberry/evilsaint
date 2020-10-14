@@ -12,6 +12,16 @@ tags:
 
 This guide is going to take you through a number of components to get your machine ready for subsequent parts of this guide. 
 
+<hr>
+### Table of Contents
+<ol class="table-of-contents">
+    <li><a href="#preparing">Preparing</a></li>
+    <li><a href="#debugging">Debugging</a></li>
+    <li><a href="#customisation">Customisation</a></li>
+    <li><a href="#kali-machine">Kali Machine</a></li>
+</ol>
+<hr>
+
 ### Preparing
 
 Hit the Windows key and type "cmd".
@@ -382,12 +392,10 @@ wox
 sharex
 ditto
 
-
+<hr class="hr-reference">
 ## References
-
-
-[Setting Up Windows Terminal WSL](https://www.ivaylopavlov.com/setting-up-windows-terminal-wsl-and-oh-my-zsh/#.X2TSmz-Smud)
-
-[Commando VM Installation Configuration](https://blog.stealthbits.com/commando-vm-installation-configuration/)
-
-[Win-Kex](https://www.kali.org/docs/wsl/win-kex/)
+<div class="reference-container">
+    <a href="https://www.ivaylopavlov.com/setting-up-windows-terminal-wsl-and-oh-my-zsh/#.X2TSmz-Smud">Setting Up Windows Terminal WSL</a><br>
+    <a href="https://blog.stealthbits.com/commando-vm-installation-configuration/">Commando VM Installation Configuration</a><br>
+    <a href="https://www.kali.org/docs/wsl/win-kex/">Win-Kex</a><br>
+</div>

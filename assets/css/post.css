@@ -18,3 +18,25 @@ blockquote:before {
 blockquote p {
     display: inline;
 }
+
+.table-of-contents>li {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.hr-reference {
+    background: #d7d7d7;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+.reference-container>a {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: blue;
+    line-height: 30px;
+}
