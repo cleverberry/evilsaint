@@ -1,9 +1,7 @@
 <!-- Bootstrap core JavaScript -->
 <script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url}}"></script>
 <script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url}}"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -140,14 +138,16 @@
 </script>
 <!-- This script if for the submission of email form. -->
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('#gform').on('submit', function (e) {
-            $('#exampleInputEmail1').val("");
-        })
+    $(document).ready(function () {
+        $('.gform').on('submit', function (e) {
+            $('.gform *').hide();
+            $('.gform').prepend('<div class="text-center" style="color: white">We are now connected. Thank you.</div>');
+        });
 
         $('#submit-form').on('click', function (e) {
-            document.querySelector('#gform').submit()
-            $('#exampleInputEmail1').val("");
+            document.querySelector('.gform').submit()
+            $('.gform *').hide();
+            $('.gform').prepend('<div class="text-center" style="color: white">We are now connected. Thank you.</div>');
         })
     })
 </script>

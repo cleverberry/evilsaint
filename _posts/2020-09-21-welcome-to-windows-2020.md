@@ -29,6 +29,8 @@ Windows Version
 
 ![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/winver.png)
 
+{% include newsletter.html %}
+
 ## PowerShell Seven
 
 
