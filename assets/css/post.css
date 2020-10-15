@@ -24,6 +24,10 @@ blockquote p {
     padding: 5px;
 }
 
+.table-of-contents>li:hover {
+    color: #41858E;
+}
+
 .hr-reference {
     background: #d7d7d7;
     position: relative;
@@ -37,6 +41,15 @@ blockquote p {
     padding-left: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    color: blue;
+    color: #41858E;
     line-height: 30px;
+}
+
+blockquote {
+    background: #34464c;
+    border-left: 10px solid #05cfa3;
+}
+
+blockquote>p {
+    color: white !important;
 }
