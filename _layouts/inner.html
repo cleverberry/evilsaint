@@ -4,74 +4,79 @@
 {% include head.html %}
 
 <body class="evail-saint">
-  <div class="d-flex" id="wrapper">
-    {% include sidebar.html %}
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0" nonce="ouof0Vf7"></script>
+    <div class="d-flex" id="wrapper">
+        {% include sidebar.html %}
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <button class="btn btn-primary navbar" id="menu-toggle"></button>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button class="btn btn-primary navbar" id="menu-toggle"></button>
 
-      <div class="container-fluid right-main-container">
-        <div class="row nav-search-row">
-          <div class="col-2 right-logo-col">
-            <a href="{{site.baseurl}}/">
-              <img src="{{site.baseurl}}/assets/images/white-logo.png" class="nav-img" alt="ES-Wordmark" />
-            </a>
-          </div>
-          <div class="col-6 top-search-col">
-            <div class="input-group" id="search-container">
-              <input type="text" id="search-input" class="form-control nav-search" placeholder="Search"
-                aria-label="Recipient's username" aria-describedby="basic-addon2" />
-              <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2"><img
+            <div class="container-fluid right-main-container">
+                <div class="row nav-search-row">
+                    <div class="col-2 right-logo-col">
+                        <a href="{{site.baseurl}}/">
+                            <img src="{{site.baseurl}}/assets/images/white-logo.png" class="nav-img" alt="ES-Wordmark" />
+                        </a>
+                    </div>
+                    <div class="col-6 top-search-col">
+                        <div class="input-group" id="search-container">
+                            <input type="text" id="search-input" class="form-control nav-search" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2"><img
                     src="{{site.baseurl}}/assets/images/nav-serach.png" alt="" /></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 nav-icons">
-            <span class="header-share"><a href="https://github.com" target="_blank"><img
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 nav-icons">
+                        <span class="header-share"><a href="https://github.com" target="_blank"><img
                   src="{{site.baseurl}}/assets/images/nav-share.png" alt="" /></a></span>
-            <span class="header-twitter"><a href="https://twitter.com" target="_blank"><img
+                        <span class="header-twitter"><a href="https://twitter.com" target="_blank"><img
                   src="{{site.baseurl}}/assets/images/nav-twitter.png" alt="" /></a></span>
-            <span class="header-mail"><a href="{{site.baseurl}}/contact.html"><img
+                        <span class="header-mail"><a href="{{site.baseurl}}/contact.html"><img
                   src="{{site.baseurl}}/assets/images/nav-emailicon.png" alt="" /></a></span>
-            <button class="btn toggle-btn" onclick="myFunction()">Dark Mode</button>
-          </div>
-        </div>
-        <div class="row my-row">
-          <div class="container card-containers">
-            <h1>
-              <ul id="results-container"></ul>
-            </h1>
-            <div class="row gallary-content-row">
-              {{ content }}
-              <div class="col-4 three-img-col">
-                <div class="row">
-                  <div class="col">
-                    <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-1 right-col-three-img" src="/assets/images/banner_ads/expressvpn/banner-bigbox-e0b01ec70755422701e5fe88ff2d1df1c26a539edc9994d83274acaec296f8fd.jpg" alt=""></a>
-                    <!-- <img class="ads right-col-three-img" src="/assets/images/adidas.png" alt=""> -->
-                  </div>
+                        <button class="btn toggle-btn" onclick="myFunction()">Dark Mode</button>
+                    </div>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-2 right-col-three-img" src="/assets/images/banner_ads/expressvpn/bestformovies-banner-square-71441a0163a8bf8773e04ac9ee495ac9817cb149e3fe8cd0aa8969fcb2f1af7a.jpg" alt=""></a>
-                    <!-- <img class="ads right-col-three-img" src="/assets/images/por1.png" alt=""> -->
-                  </div>
+                <div class="row my-row">
+                    <div class="container card-containers">
+                        <h1>
+                            <ul id="results-container"></ul>
+                        </h1>
+                        <div class="row gallary-content-row">
+                            {{ content }}
+                            <div class="col-4 three-img-col">
+                                <div class="row">
+                                    <div class="col">
+                                        <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-1 right-col-three-img" src="/assets/images/banner_ads/expressvpn/banner-bigbox-e0b01ec70755422701e5fe88ff2d1df1c26a539edc9994d83274acaec296f8fd.jpg" alt=""></a>
+                                        <!-- <img class="ads right-col-three-img" src="/assets/images/adidas.png" alt=""> -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-2 right-col-three-img" src="/assets/images/banner_ads/expressvpn/bestformovies-banner-square-71441a0163a8bf8773e04ac9ee495ac9817cb149e3fe8cd0aa8969fcb2f1af7a.jpg" alt=""></a>
+                                        <!-- <img class="ads right-col-three-img" src="/assets/images/por1.png" alt=""> -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-3 right-col-three-img" src="/assets/images/banner_ads/expressvpn/expressvpn-sports-square-champions-league-1fed9a366a578d8585a7514ae4da0f826f7ec08042009d922c3d58dbea90497b.jpg" alt=""></a>
+                                        <!-- <img class="ads right-col-three-img" src="/assets/images/nike1.png" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-3 right-col-three-img" src="/assets/images/banner_ads/expressvpn/expressvpn-sports-square-champions-league-1fed9a366a578d8585a7514ae4da0f826f7ec08042009d922c3d58dbea90497b.jpg" alt=""></a>
-                    <!-- <img class="ads right-col-three-img" src="/assets/images/nike1.png" alt=""> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row discussion-row">
-          <div class="col-7">
-            <div class="row new-discussion-row">
-              <div class="col-3 text-center">
+                <div class="row discussion-row">
+                    <div class="col-7">
+                        <div class="row new-discussion-row">
+                            <div class="col text-center">
+                                <div class="fb-comments" data-colorscheme="dark" data-href="https://evilsaint.co.uk/2020/09/21/welcome-to-windows-2020/" data-numposts="5" data-width=""></div>
+                            </div>
+                            <!-- <div class="col-3 text-center">
+
                 <img src="/assets/images/newsample-person.png" alt="">
                 <p class="log-text">Log in with:</p>
                 <div>
@@ -85,25 +90,25 @@
                     <a class="comment-emailicon" href="#"><img src="/assets/images/nav-emailicon.png" alt=""></a>
                   </span>
                 </div>
-              </div>
-              <div class="col">
+              </div> -->
+                            <!-- <div class="col">
                 <form>
                   <div class="form-group">
                     <textarea class="form-control" id="discussion" placeholder="Start a discussion.."></textarea>
                   </div>
                   <button type="submit" class="btn post-submit">POST</button>
                 </form>
-              </div>
+              </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- /#page-content-wrapper -->
         </div>
-      </div>
-      <!-- /#page-content-wrapper -->
     </div>
-  </div>
-  <!-- /#wrapper -->
+    <!-- /#wrapper -->
 
-  {% include scripts.html %}
+    {% include scripts.html %}
 </body>
 
 </html>

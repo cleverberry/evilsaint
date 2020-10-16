@@ -53,3 +53,7 @@ blockquote {
 blockquote>p {
     color: white !important;
 }
+
+.new-discussion-row {
+    margin-bottom: 100px;
+}
