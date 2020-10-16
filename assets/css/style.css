@@ -1022,11 +1022,11 @@ code {
   margin-bottom: 10px;
 } */
 
-.list-group-item {
+.list-tools > li {
     color: #05CFA3 !important;
     background: #1F2029;
 }
 
-.list-group-item:hover {
+.list-tools>li:hover {
     background: #34464C;
 }
