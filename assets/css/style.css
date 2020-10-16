@@ -1027,6 +1027,11 @@ code {
     background: #1F2029;
 }
 
-.list-tools>li:hover {
+.list-tools > li:hover {
     background: #34464C;
+}
+
+.tags-btn {
+    background-color: transparent;
+    color: white !important;
 }
