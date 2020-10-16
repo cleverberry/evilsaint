@@ -936,3 +936,11 @@ input[type=submit]:hover {
 .tags-btn {
   background-color: transparent;
 }
+
+.tags-btn:hover, .tags-btn>a:hover {
+  color: #34464C;
+}
+
+.btn.toggle-btn {
+  background-color: transparent;
+}
