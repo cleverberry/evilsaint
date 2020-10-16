@@ -1022,16 +1022,3 @@ code {
   margin-bottom: 10px;
 } */
 
-.list-tools > li {
-    color: #05CFA3 !important;
-    background: #1F2029;
-}
-
-.list-tools > li:hover {
-    background: #34464C;
-}
-
-.tags-btn {
-    background-color: transparent;
-    color: white !important;
-}
