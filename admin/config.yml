@@ -1,5 +1,5 @@
 backend:
-  name: evilsaint
+  name: https://github.com/cleverberry/evilsaint.com
   branch: gh-pages # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
