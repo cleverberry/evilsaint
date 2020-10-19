@@ -11,7 +11,7 @@ media_folder: "assets/images/uploads" # Media files will be stored in the repo u
 collections:
   - name: "post"
     label: "post"
-    folder: "_posts/blog"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
