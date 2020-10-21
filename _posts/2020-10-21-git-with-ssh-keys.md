@@ -59,7 +59,7 @@ Linux
 ls -l ~/.ssh
 {% endhighlight %}
 
-![](list-ssh-keys-linux.png)
+![]({{ site.baseurl}}/assets/images/article-images/list-ssh-keys-linux.png)
 
 
 Windows CMD
