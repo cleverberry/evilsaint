@@ -24,49 +24,57 @@ However, sometimes you may want to use the full power of the command line, in wh
 SSH keys are stored at the following locations depending on the operating system and / or the user.
 
 On Linux - assuming you are not using the root user ;-)
-```
+
+{% highlight PowerShell %}
 /home/<user>/.ssh 
-```
+{% endhighlight %}
+
 or 
 
 Root user
-```
+
+{% highlight PowerShell %}
 /root/.ssh
-```
+{% endhighlight %}
 
 Both of these can be shortened using the tilde `~` which is a shortcut for home. You can use tilde with many commands to save you from typing the full path. For example, you could have `cd ~` that would take you to your home directory. The two commands mentioned above could be shortened to the following.
-```
+
+{% highlight PowerShell %}
 ~/.ssh
-```
+{% endhighlight %}
 
 On Windows, the typical location for SSH keys is
-```
+
+{% highlight PowerShell %}
 C:\User\<username>\.ssh
-```
+{% endhighlight %}
 
 ## Listing Keys
 
 Now that we have learned where the SSH keys are stored on our system; let us look at how we can list the contents of this folder.
 
 Linux
-```
+
+{% highlight PowerShell %}
 ls -l ~/.ssh
-```
+{% endhighlight %}
 
 ![](list-ssh-keys-linux.png)
 
 
 Windows CMD
-```
+
+{% highlight PowerShell %}
 dir c:\users\<username>\.ssh
-```
+{% endhighlight %}
 
 ![](cmd_listing_ssh_keys.png)
 
 Windows PowerShell
-```
+
+{% highlight PowerShell %}
 Get-ChildItem C:\Users\<username>\.ssh
-```
+{% endhighlight %}
 
 ![](get-child-item.png)
 
@@ -86,9 +94,11 @@ To generate a brand new key pair, you can use the SSH keygen command `ssh-keygen
 
 
 Here's the command you want to use
-```
+
+{% highlight PowerShell %}
 ssh-keygen -t rsa -b 4096 -C "<comment>"
-```
+{% endhighlight %}
+
 | Option     | Description                              |
 |------------|------------------------------------------|
 | -t type    | The type option states the type of encryption to use. The possible values are "dsa", "ecdsa" or "rsa". Please note this is RSA version 2, for RSA version 1 you need to change this to "rsa1". |
