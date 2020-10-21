@@ -19,7 +19,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Meta", name: "meta", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image", name: "image", widget: "image", default: "card1-img.png"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
