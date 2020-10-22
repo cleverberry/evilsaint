@@ -2,10 +2,10 @@
 layout: post
 title: Generating a New Public Key
 meta: How to generate a new public key.
-category: programming
+category: " "
 image: card1-img.png
 date: 2020-10-22T03:20:00.853Z
-tags: programming
+tags: " "
 ---
 ## Generating a New Public Key
 
