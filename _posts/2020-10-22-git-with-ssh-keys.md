@@ -3,7 +3,7 @@ layout: post
 title: Git with SSH Keys
 meta: When working with Git via command line, the easiest way to authenticate is
   with x.509 keys. This article will show you how to set them up.
-category: " "
+category: "  "
 image: card1-img.png
 date: 2020-10-22T03:02:23.837Z
 tags: " "
