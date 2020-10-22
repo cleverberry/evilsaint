@@ -58,7 +58,7 @@ Linux
 ls -l ~/.ssh
 {% endhighlight %}
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/list-ssh-keys-linux.png)
+![list-ssh-keys-linux]({{ site.baseurl}}/assets/images/article-images/ssh and github/list-ssh-keys-linux.png "list-ssh-keys-linux")
 
 Windows CMD
 
@@ -66,7 +66,7 @@ Windows CMD
 dir c:\users<username>.ssh
 {% endhighlight %}
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/cmd_listing_ssh_keys.png)
+![cmd_listing_ssh_keys]({{ site.baseurl}}/assets/images/article-images/ssh and github/cmd_listing_ssh_keys.png "cmd_listing_ssh_keys")
 
 Windows PowerShell
 
@@ -74,8 +74,7 @@ Windows PowerShell
 Get-ChildItem C:\Users<username>.ssh
 {% endhighlight %}
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/get-child-item.png)
-
+![get-child-item]({{ site.baseurl}}/assets/images/article-images/ssh and github/get-child-item.png "get-child-item")
 
 > **Note** It is quite common to have multiple keys in this folder as keys can be used for many things other than Git. 
 
@@ -121,17 +120,15 @@ First, let us look at Gitlab.
 
 Click on the profile icon in the top right and a drop down menu will appear. Select the menu item "Settings". 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/gitlab_settings.png)
+![gitlab_settings]({{ site.baseurl}}/assets/images/article-images/ssh and github/gitlab_settings.png "gitlab_settings")
 
 Another menu should be located on the left hand side of the settings page. On it, click on the "SSH Keys" option.
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/gitlab_sshkeys.png)
-
+![gitlab_sshkeys]({{ site.baseurl}}/assets/images/article-images/ssh and github/gitlab_sshkeys.png "gitlab_sshkeys")
 
 You will be presented with an input box to paste your public key (the one that ends in `.pub`). Paste your key into the input box and give your key a title that will allow you to recall the device or user that will be authenticated. Make sure that this is something you will remember years down the road, as it can be difficult to debug over time if you are left to analyse an ambiguous clue. Finally, you can submit an expiry date which is useful if you have third party developers or contractors working in your repository. 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/sshkeys-gitlab.png)
-
+![sshkeys-gitlab]({{ site.baseurl}}/assets/images/article-images/ssh and github/sshkeys-gitlab.png "sshkeys-gitlab")
 
 **GitHub**
 
@@ -139,20 +136,19 @@ As we will see, Github follows a similar process to that of adding SSH keys to G
 
 Click on the profile icon in the top right corner and a drop down menu will appear. Select the menu item "Settings". 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_settings.png)
-
+![github_settings]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_settings.png "github_settings")
 
 A menu should be located on the left hand side of the settings page. Click on the "SSH and GPG Keys" option.
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_ssh_menu.png)
+![github_ssh_menu]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_ssh_menu.png "github_ssh_menu")
 
 At this point of the Gitlab setup, we would be presented with an input field to paste our SSH key into, below which would be a list of all our existing keys. With Github, however, we are presented with a list of our existing keys and a green button that says "New SSH Key". Click on this button and you will be presented with an input box similar to that provided on Gitlab. 
 
-![](add_new_sshkey_button.png)
+![add_new_sshkey_button](add_new_sshkey_button.png "add_new_sshkey_button")
 
 An input box to paste your public key (the one that ends in `.pub`) will be presented to you. Paste your key into the input box and give your key a title that will allow you to recall the device or user that will be authenticated. Make sure that this is something you will remember years down the road, as it can be difficult to debug over time if you are left to analyse an ambiguous clue. Unlike Gitlab, Github does not allow you to set a key that expires. 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_add_ssh_key.png)
+![github_add_ssh_key]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_add_ssh_key.png "github_add_ssh_key")
 
 ## Using multiple keys
 
