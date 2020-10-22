@@ -12,8 +12,7 @@ tags: programming
 
 When working with Git via command line, the easiest way to authenticate is with x.509 keys. This article will show you how to set them up. 
 
-
-## Introduction 
+## Introduction
 
 With GUI-based Git clients, such as GitHub Desktop and SourceTree, authentication is managed by the applications themselves with little to no user input required.
 
@@ -46,7 +45,7 @@ Both of these can be shortened using the tilde `~` which is a shortcut for home.
 On Windows, the typical location for SSH keys is
 
 {% highlight PowerShell %}
-C:\User\<username>\.ssh
+C:\User<username>.ssh
 {% endhighlight %}
 
 ## Listing Keys
@@ -61,22 +60,21 @@ ls -l ~/.ssh
 
 ![]({{ site.baseurl}}/assets/images/article-images/ssh and github/list-ssh-keys-linux.png)
 
-
 Windows CMD
 
 {% highlight PowerShell %}
-dir c:\users\<username>\.ssh
+dir c:\users<username>.ssh
 {% endhighlight %}
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/cmd_listing_ssh_keys.png)
+![]()
 
 Windows PowerShell
 
 {% highlight PowerShell %}
-Get-ChildItem C:\Users\<username>\.ssh
+Get-ChildItem C:\Users<username>.ssh
 {% endhighlight %}
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/get-child-item.png)
+![]()
 
 > **Note** It is quite common to have multiple keys in this folder as keys can be used for many things other than Git. 
 
@@ -92,19 +90,17 @@ It should be noted that you can regenerate a public key with just the private ke
 
 To generate a brand new key pair, you can use the SSH keygen command `ssh-keygen` which is available on most versions of *nix, Mac OS, and Windows with either the Windows Subsystem for Linux (WSL) or the Git Windows Desktop package. 
 
-
 Here's the command you want to use
 
 {% highlight PowerShell %}
 ssh-keygen -t rsa -b 4096 -C "<comment>"
 {% endhighlight %}
 
-| Option     | Description                              |
-|------------|------------------------------------------|
-| -t type    | The type option states the type of encryption to use. The possible values are "dsa", "ecdsa" or "rsa". Please note this is RSA version 2, for RSA version 1 you need to change this to "rsa1". |
-| -b bits    | This option specifies the number of bits in the key to create.  For RSA keys I like to use 4096 bits, the default is 2048 and the minimum is 768 bits. When working with DSA keys it is important to note that the DSA keys must be exactly 1024 bits. For ECDSA keys, the -b flag determines they key length by selecting from one of three elliptic curve sizes: 256, 384 or 521 bits.  Attempting to use bit lengths other than these three values for ECDSA keys will fail. |
-| -C comment | Allows for a comment to be added to the public key |
-
+| Option      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \-t type    | The type option states the type of encryption to use. The possible values are "dsa", "ecdsa" or "rsa". Please note this is RSA version 2, for RSA version 1 you need to change this to "rsa1".                                                                                                                                                                                                                                                                                  |
+| \-b bits    | This option specifies the number of bits in the key to create.  For RSA keys I like to use 4096 bits, the default is 2048 and the minimum is 768 bits. When working with DSA keys it is important to note that the DSA keys must be exactly 1024 bits. For ECDSA keys, the -b flag determines they key length by selecting from one of three elliptic curve sizes: 256, 384 or 521 bits.  Attempting to use bit lengths other than these three values for ECDSA keys will fail. |
+| \-C comment | Allows for a comment to be added to the public key                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > **Note** The comment field is typically filled in with the key owner's email address, but it can actually be anything you want it to be. You could enter a random string or a note about the client device or service being used. It is, however, recommended that you do not enter vague or unclear content in this space, and instead use something that will allow you to identify the owner / purpose of the keys years down the road. 
 
@@ -122,39 +118,37 @@ As can be seen in the picutures below; setting up Git to work with SSH keys is a
 
 First, let us look at Gitlab. 
 
-
 Click on the profile icon in the top right and a drop down menu will appear. Select the menu item "Settings". 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/gitlab_settings.png)
+![]()
 
 Another menu should be located on the left hand side of the settings page. On it, click on the "SSH Keys" option.
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/gitlab_sshkeys.png)
+![]()
 
 You will be presented with an input box to paste your public key (the one that ends in `.pub`). Paste your key into the input box and give your key a title that will allow you to recall the device or user that will be authenticated. Make sure that this is something you will remember years down the road, as it can be difficult to debug over time if you are left to analyse an ambiguous clue. Finally, you can submit an expiry date which is useful if you have third party developers or contractors working in your repository. 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/sshkeys-gitlab.png)
+![]()
 
 **GitHub**
 
 As we will see, Github follows a similar process to that of adding SSH keys to Gitlab, albeit with an extra step. 
 
-
 Click on the profile icon in the top right corner and a drop down menu will appear. Select the menu item "Settings". 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_settings.png)
+![]()
 
 A menu should be located on the left hand side of the settings page. Click on the "SSH and GPG Keys" option.
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_ssh_menu.png)
+![]()
 
 At this point of the Gitlab setup, we would be presented with an input field to paste our SSH key into, below which would be a list of all our existing keys. With Github, however, we are presented with a list of our existing keys and a green button that says "New SSH Key". Click on this button and you will be presented with an input box similar to that provided on Gitlab. 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/add_new_sshkey_button.png)
+![]()
 
 An input box to paste your public key (the one that ends in `.pub`) will be presented to you. Paste your key into the input box and give your key a title that will allow you to recall the device or user that will be authenticated. Make sure that this is something you will remember years down the road, as it can be difficult to debug over time if you are left to analyse an ambiguous clue. Unlike Gitlab, Github does not allow you to set a key that expires. 
 
-![]({{ site.baseurl}}/assets/images/article-images/ssh and github/github_add_ssh_key.png)
+![]()
 
 ## Using multiple keys
 
@@ -165,13 +159,3 @@ Why?
 If a keypair becomes compromised, it is much easier to regenerate one keypair than it is to change it in multiple locations. 
 
 It is recommended that you use a different SSH key for every service you intend to use. This makes it very easy to invalidate a key on a specific service without having to change it on all the services, should you decide to renew it either because it has been compromised / publicly exposed or for any other reason.
-
-
-
-
-
-
-
-
-
-
