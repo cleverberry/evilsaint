@@ -241,10 +241,10 @@ go get -u github.com/justjanne/powerline-go
 Install Hyper for Windows
 https://releases.hyper.is/download/win
 
-![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/install-hyper-for-windows.png)
+![install-hyper-for-windows]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/install-hyper-for-windows.png "install-hyper-for-windows")
 
 With the Hypershell open, enter the following commands
-!\[]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/hyper-shell.png)
+!\[]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/hyper-shell.png "hyper-shell")
 
 settings.json
 
@@ -265,7 +265,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; \[System.Net.ServicePointManag
 
 Confirm the installation of Chocolatey
 
-![]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/chocolatey-install-confirm-version.png)
+![chocolatey-install-confirm-version]({{ site.baseurl }}/assets/images/article-images/welcome-to-windows-2020/chocolatey-install-confirm-version.png "chocolatey-install-confirm-version")
 
 Lets install some packages
 
