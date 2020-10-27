@@ -68,18 +68,16 @@
                 <div class="col">
                     <h3>Tags</h3>
                     <hr />
-
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/programming/">Programming</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/programming/">Programming {% if site.tags.programming.size > 0%}({{ site.tags.programming.size }}){% endif %}</a></button>
                     <!-- <button class="btn tags-btn"><a href="{{site.baseurl}}/coding/">Coding</a></button> -->
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/security/">Security</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat/">White Hat</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/tags/">Tags</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/hex/">Hex</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/hacking/">Hacking</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/security/">Security {% if site.tags.security.size > 0%}({{ site.tags.security.size }}){% endif %}</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat/">White Hat {% if site.tags.white-hat.size > 0%}({{ site.tags.white-hat.size }}){% endif %}</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/hex/">Hex {% if site.tags.hex.size > 0%}({{ site.tags.hex.size }}){% endif %}</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/hacking/">Hacking {% if site.tags.hacking.size > 0%}({{ site.tags.hacking.size }}){% endif %}</a></button>
                     <button class="btn tags-btn"><a href="{{site.baseurl}}/ethical-hacking/">Ethical
-                            Hacking</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/code/">Code</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/security/">Security</a></button>
+                            Hacking {% if site.tags.ethical-hacking.size > 0%}({{ site.tags.ethical-hacking.size }}){% endif %}</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/code/">Code {% if site.tags.code.size > 0%}({{ site.tags.code.size }}){% endif %}</a></button>
+                    <button class="btn tags-btn"><a href="{{site.baseurl}}/security/">Security {% if site.tags.security.size > 0%}({{ site.tags.security.size }}){% endif %}</a></button>
                 </div>
             </div>
 
