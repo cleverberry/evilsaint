@@ -3,10 +3,10 @@ layout: post
 title: Welcome to Windows 2020
 meta: This guide is going to take you through a number of components to get your
   machine ready for subsequent parts of this guide.
-category:
+category: programming
 image: card1-img.png
 date: 21 September 2020
-tags:
+tags: programming
 ---
 # Welcome to Windows 2020
 
