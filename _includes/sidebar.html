@@ -48,7 +48,19 @@
                         <li><a href="{{site.baseurl}}/security/">Security</a></li>
                         <li><a href="{{site.baseurl}}/news/">News</a></li>
                         <li><a href="{{site.baseurl}}/tools/">Tools</a></li>
-                        <li><a href="{{site.baseurl}}/capture-the-flag/">Capture The Flag (CTF)</a></li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Capture The Flag (CTF)</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/vulnhub/">Vulnhub</a></li>
+                                <li><a href="{{site.baseurl}}/hackthebox/">HackTheBox</a></li>
+                            </ul>
+                            <script>
+                                $('.subcategory-header').on('click', function() {
+                                    $(this).next().slideToggle()
+                                })
+                                $('.subcategory').hide()
+                            </script>
+                        </li>
                     </ul>
                 </div>
             </div>
