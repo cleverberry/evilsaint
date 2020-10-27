@@ -18,7 +18,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Meta", name: "meta", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ['programming', 'hacking', 'security', 'news', 'tools', 'vulnhub', 'hackthebox']}
+      - {label: "Category", name: "category", widget: "select", options: ['programming', 'hacking', 'security', 'news', 'tools', 'vulnhub', 'hackthebox'], multiple: true}
       - {label: "Image", name: "image", widget: "image", default: "card1-img.png"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "select", options: ['programming', 'security', 'white-hat', 'tags', 'hex', 'hacking', 'ethical-hacking', 'code', 'security'], multiple: true}
