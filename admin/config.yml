@@ -18,7 +18,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Meta", name: "meta", widget: "string"}
-      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ['programming', 'hacking', 'security', 'news', 'tools', 'vulnhub', 'hackthebox']}
       - {label: "Image", name: "image", widget: "image", default: "card1-img.png"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "string"}
