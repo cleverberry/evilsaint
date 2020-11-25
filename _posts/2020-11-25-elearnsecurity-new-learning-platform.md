@@ -15,11 +15,13 @@ permalink: blog/:title
 ---
 <style>
   .hover-link:hover {
-    color: #34464c;
+    
   }
 
   .hover-link {
     font-weight: bold;
+    cursor: pointer;
+    color: #05cfa3;
   }
 </style>
 

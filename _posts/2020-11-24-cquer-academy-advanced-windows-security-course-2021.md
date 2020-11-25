@@ -17,14 +17,16 @@ permalink: blog/:title
 ---
 <style>
   .hover-link:hover {
-    color: #34464c;
+    
   }
 
   .hover-link {
     font-weight: bold;
+    cursor: pointer;
+    color: #05cfa3;
   }
 </style>
-For those of you who follow the <a class="hover-link" href="https://www.facebook.com/TheEvilSaint">EvilSaint Facebook account</a>, will know that today was the start of the CQure Academy Advanced Windows Security course I signed up for. I will be looking to review the course from start to finish and this blog marks the beginning of a six-week ongoing review of the course as it progresses.
+For those of you who follow the <a class="hover-link" target="_blank" href="https://www.facebook.com/TheEvilSaint">EvilSaint Facebook account</a>, will know that today was the start of the CQure Academy Advanced Windows Security course I signed up for. I will be looking to review the course from start to finish and this blog marks the beginning of a six-week ongoing review of the course as it progresses.
 
 First some background on the course. The course is taught over a six-week duration and divided into 12 modules, it is aimed at cyber security professionals on both the offensive and defensive side and its coverage is limited to Microsoft and Windows.
 
@@ -48,6 +50,6 @@ The session was okay, I wouldn’t say advanced however I guess it is all about 
 
 The instructors, Paula and Mike were up-beat and excited to be teaching the revamped curriculum, the Zoom platform was stable and with the exception of one person the audio was crisp for everyone.
 
-Unfortunately, the first demo that Paula attempted didn’t work as expected, possibly caused due to the Demo Gods not receiving a big enough sacrifice prior to lesson commencement. When the demo didn’t work l had flashbacks to every to every demo I have given in my own private ethical hacking mentoring group that had ever gone wrong. Luckily, Paula was a pro and was prepared with screenshots, so we all understood the point of what was supposed to happen.
+Unfortunately, the first demo that Paula attempted didn’t work as expected, possibly caused due to the Demo Gods not receiving a big enough sacrifice prior to lesson commencement. When the demo didn’t work l had flashbacks to every to every demo I have given in my own private <a class="hover-link" target="_blank" href="{{ site.baseurl }}/ethical-hacking-mentoring-group">ethical hacking mentoring group</a> that had ever gone wrong. Luckily, Paula was a pro and was prepared with screenshots, so we all understood the point of what was supposed to happen.
 
 I am looking forward to the next session and depending on how this course progresses may do another CQure academy course straight after this one.
