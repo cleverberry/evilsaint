@@ -11,6 +11,7 @@ tag:
   - courses
   - elearnsecurity
   - ine.com
+permalink: blog/:title
 ---
 <style>
   .hover-link:hover {

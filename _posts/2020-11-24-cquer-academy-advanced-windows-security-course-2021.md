@@ -13,6 +13,7 @@ tag:
   - windows
   - cqure
   - advanced
+permalink: blog/:title
 ---
 <style>
   .hover-link:hover {
