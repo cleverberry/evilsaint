@@ -5,13 +5,25 @@ meta: For those of you who follow the EvilSaint Facebook account, will know that
   today was the start of the CQure Academy Advanced Windows Security course I
   signed up for.
 category:
-  - programming
+  - hacking
 image: card1-img.png
 date: 2020-11-24T03:39:00.301Z
-tags:
-  - programming
+tag:
+  - courses
+  - windows
+  - cqure
+  - advanced
 ---
-For those of you who follow the [EvilSaint Facebook account](https://www.facebook.com/TheEvilSaint), will know that today was the start of the CQure Academy Advanced Windows Security course I signed up for. I will be looking to review the course from start to finish and this blog marks the beginning of a six-week ongoing review of the course as it progresses.
+<style>
+  .hover-link:hover {
+    color: #34464c;
+  }
+
+  .hover-link {
+    font-weight: bold;
+  }
+</style>
+For those of you who follow the <a class="hover-link" href="https://www.facebook.com/TheEvilSaint">EvilSaint Facebook account</a>, will know that today was the start of the CQure Academy Advanced Windows Security course I signed up for. I will be looking to review the course from start to finish and this blog marks the beginning of a six-week ongoing review of the course as it progresses.
 
 First some background on the course. The course is taught over a six-week duration and divided into 12 modules, it is aimed at cyber security professionals on both the offensive and defensive side and its coverage is limited to Microsoft and Windows.
 
@@ -38,3 +50,5 @@ The instructors, Paula and Mike were up-beat and excited to be teaching the reva
 Unfortunately, the first demo that Paula attempted didn’t work as expected, possibly caused due to the Demo Gods not receiving a big enough sacrifice prior to lesson commencement. When the demo didn’t work l had flashbacks to every to every demo I have given in my own private ethical hacking mentoring group that had ever gone wrong. Luckily, Paula was a pro and was prepared with screenshots, so we all understood the point of what was supposed to happen.
 
 I am looking forward to the next session and depending on how this course progresses may do another CQure academy course straight after this one.
+
+![ine-elearn-security-new-learning-platform]({{ site.baseurl }}/assets/images/article-images/elearn-security-new-learning-platform/ine-elearn-security-new-learning-platform.png "ine-elearn-security-new-learning-platform")
