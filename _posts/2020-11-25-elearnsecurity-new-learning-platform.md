@@ -7,9 +7,21 @@ category:
   - hacking
 image: card1-img.png
 date: 2020-11-23T04:27:16.655Z
-tags:
-  - programming
+tag:
+  - courses
+  - elearnsecurity
+  - ine.com
 ---
+<style>
+  .hover-link:hover {
+    color: #34464c;
+  }
+
+  .hover-link {
+    font-weight: bold;
+  }
+</style>
+
 As a multiple elearnsecurity certification holder I recently received and email inviting me to try out a Beta test of their new training platform.  Upon opening the email I was quite surprised that the training platform wasn't hosted on elearnsecurity and instead it was hosted on ine.com. 
 
 "Where had I seen or heard that name before?", then it hit me! I had been looking at ine.com back when I was thinking about pursuing my CCIE; nearly all network engineers I knew at that time had suggested they had the best CCIE training! but what had this to do with elearnsecurity?
@@ -24,4 +36,6 @@ In short the new model is; you can go to elearnsecurity and buy an exam voucher 
 
 Up until a week ago I was debating on whether to "go for it" with regards to ine.com subscription as I had just recently purchased a place on @CQuer Academy: Advanced Windows Security Course 2021 the Advanced Windows Security course by CQure and was ruminating over taking the new Crack the Perimeter replacement course by Offensive Security (the OSEP). That was until I received a Black Friday discount email of 40% of the yearly price! for just $1199, down from $1999, I would be able to complete all elearnsecurity training courses (assuming I finish them within the year - the length of my training subscription). Without hesitation I signed up and from this point the "Game is on!". 
 
-This blog post, similar to the \[link to the Cqure post] will be my ongoing review of my experience with ine.com and the elearnsecurity certification process over the next year.  Let’s see how many courses I can complete 😏
+This blog post, similar to the <a class="hover-link" href="https://evilsaint.co.uk/hacking/2020/11/24/cquer-academy-advanced-windows-security-course-2021/">Cqure</a> will be my ongoing review of my experience with ine.com and the elearnsecurity certification process over the next year.  Let’s see how many courses I can complete 😏
+
+![ine-elearn-security-new-learning-platform.png]({{ site.baseurl }}/assets/images/article-images/elearn-security-new-learning-platform/ine-elearn-security-new-learning-platform.png "ine-elearn-security-new-learning-platform.png")
