@@ -50,5 +50,3 @@ The instructors, Paula and Mike were up-beat and excited to be teaching the reva
 Unfortunately, the first demo that Paula attempted didn’t work as expected, possibly caused due to the Demo Gods not receiving a big enough sacrifice prior to lesson commencement. When the demo didn’t work l had flashbacks to every to every demo I have given in my own private ethical hacking mentoring group that had ever gone wrong. Luckily, Paula was a pro and was prepared with screenshots, so we all understood the point of what was supposed to happen.
 
 I am looking forward to the next session and depending on how this course progresses may do another CQure academy course straight after this one.
-
-![ine-elearn-security-new-learning-platform]({{ site.baseurl }}/assets/images/article-images/elearn-security-new-learning-platform/ine-elearn-security-new-learning-platform.png "ine-elearn-security-new-learning-platform")
