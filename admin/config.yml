@@ -21,6 +21,6 @@ collections:
       - {label: "Category", name: "category", widget: "select", options: ['programming', 'hacking', 'security', 'news', 'tools', 'vulnhub', 'hackthebox'], multiple: true}
       - {label: "Image", name: "image", widget: "image", default: "card1-img.png"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "select", options: ['programming', 'security', 'white-hat', 'hex', 'hacking', 'ethical-hacking', 'code', 'security', courses, windows, cqure, advanced], multiple: true}
+      - {label: "Tags", name: "tags", widget: "select", options: ['programming', 'security', 'white-hat', 'hex', 'hacking', 'ethical-hacking', 'code', 'security', courses, windows, cqure, advanced, elearnsecurity, ine.com], multiple: true}
       - {label: "Body", name: "body", widget: "markdown"}
     
