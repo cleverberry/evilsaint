@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="GvBIRceyOSMyNq_DUo2Ks1KOT0DUyRAaJAZuXgCq7uI" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>{{ site.title }} | {{ page.title }} </title>
+</head>
+<body>
+    <style>
+        body, html {
+            height: 100%;
+            background-color: black;
+            color: white;
+        }
+        .bg {
+            height: 100%;
+        }
+        #particles-js {
+            height: 100%
+        }
+        .christmas-container {
+            margin-top: 50px;
+        }
+        .btn-primary:hover {
+            background-color: #02ac87 !important;
+        }
+        .btn-primary {
+            background-color: #05cfa3;
+            margin-top: 20px;
+        }
+        .christmasRadios {
+            transform:scale(1.5);
+        }
+        .christmasRadioLabels {
+            padding-left: 15px;
+            font-size: 20px;
+        }
+        .emailInput {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin: 20px;
+        }
+    </style>
+    
+    <div class="bg" id="particles-js">
+        <div class="container christmas-container">
+            <div class="row justify-content-md-center">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+
+  
+    
+    <script src="{{ site.baseurl }}/assets/js/particles-js.js"></script>
+    <script>
+        particlesJS.load('particles-js', '{{ site.baseurl }}/assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
