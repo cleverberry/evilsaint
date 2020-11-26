@@ -1,7 +1,6 @@
 ---
 title: 25 Days of Christmas
 ---
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,15 +15,90 @@ title: 25 Days of Christmas
     <style>
         body, html {
             height: 100%;
+            background-color: black;
+            color: white;
         }
-
         .bg {
             height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        }
+        #particles-js {
+            height: 100%
+        }
+        .christmas-container {
+            margin-top: 50px;
+        }
+        .btn-primary:hover {
+            background-color: #02ac87 !important;
+        }
+        .btn-primary {
+            background-color: #05cfa3;
+            margin-top: 20px;
+        }
+        .christmasRadios {
+            transform:scale(1.5);
+        }
+        .christmasRadioLabels {
+            padding-left: 15px;
+            font-size: 20px;
+        }
+        .emailInput {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin: 20px;
         }
     </style>
-    <div class="bg" style="background-image: url('{{site.baseurl}}/assets/images/evilsaint_holding_page.jpg')"></div>
+    
+    <div class="bg" id="particles-js">
+        <div class="container christmas-container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 text-center">
+                    <h1>HEADING</h1>
+                </div>
+                <div class="col-12 text-center">
+                    <h2>What is the question?</h2>
+                </div>
+                <div class="col-sm-8">
+                    <form>
+                        <div class="form-group">
+                            <div>
+                                <input class="form-check-input christmasRadios" type="radio" name="christmasRadios" id="optionInput1" value="option1">
+                                <label class="form-check-label christmasRadioLabels" for="optionInput1">
+                                    This is an option
+                                </label>
+                                <br>
+                                <input class="form-check-input christmasRadios" type="radio" name="christmasRadios" id="optionInput2" value="option2">
+                                <label class="form-check-label christmasRadioLabels" for="optionInput2">
+                                    This is another option
+                                </label>
+                                <br>
+                                <input class="form-check-input christmasRadios" type="radio" name="christmasRadios" id="optionInput3" value="option3">
+                                <label class="form-check-label christmasRadioLabels" for="optionInput3">
+                                    This is an option
+                                </label>
+                                <br>
+                                <input class="form-check-input christmasRadios" type="radio" name="christmasRadios" id="optionInput4" value="option4">
+                                <label class="form-check-label christmasRadioLabels" for="optionInput4">
+                                    I am not an option
+                                </label>
+                            </div>
+                            <input type="email" class="form-control emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                            <button type="submit" class="btn btn-primary form-control">Submit Answer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+    
+    <script src="{{ site.baseurl }}/assets/js/particles-js.js"></script>
+    <script>
+        particlesJS.load('particles-js', '{{ site.baseurl }}/assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 </html>
