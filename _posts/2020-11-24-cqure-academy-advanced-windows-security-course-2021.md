@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CQuer Academy: Advanced Windows Security Course 2021"
+title: "CQure Academy: Advanced Windows Security Course 2021"
 meta: For those of you who follow the EvilSaint Facebook account, will know that
   today was the start of the CQure Academy Advanced Windows Security course I
   signed up for.
