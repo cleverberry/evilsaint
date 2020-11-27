@@ -1,11 +1,11 @@
 ---
-title: Day 1
+title: Day 20
 layout: christmas
-mainQ: SID filtering is used to?
-option1: A - Prevent creation of tickets with non-existing SIDs
-option2: B - Prevent recovery of krbtgt account ntlm hash
-option3: C - Prevent usage of tickets with privileged SIDs originating from another domain within forest
-option4: D - All of the above
+mainQ: "Is it possible to enable ASLR for EXE/DLL that doesn't opt-in to ASLR (was not compiled with /DYNAMICBASE flag)?"
+option1: "A - No"
+option2: "B - Yes, by enabling mandatory ASLR and Bottom-up ASLR features in Windows Defender Exploit Guard: Exploit Protection (under the condition that the image is not stripped)"
+option3: "C - Yes, by enabling ASLR in EXE/DLL file properties"
+option4: "D - Yes, by enabling Control Flow Guard in Windows Defender Exploit Guard: Exploit Protection"
 ---
 
 <div class="col-12 text-center">
@@ -38,8 +38,8 @@ option4: D - All of the above
                     {{ page.option4 }}
                 </label>
             </div><br>
-            <input type="text" class="form-control nameInput" id="nameInput" aria-describedby="nameHelp" placeholder="Your name">
-            <input type="email" class="form-control emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="Your email">
+            <input type="text" class="form-control nameInput" id="nameInput" aria-describedby="nameHelp" placeholder="Your name" required>
+            <input type="email" class="form-control emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="Your email" required>
             <button type="submit" class="btn btn-primary form-control">Submit Answer</button>
         </div>
     </form>
