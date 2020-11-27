@@ -8,7 +8,7 @@ category:
   - hacking
 image: card1-img.png
 date: 2020-11-24T03:39:00.301Z
-tag:
+tags:
   - courses
   - windows
   - cqure

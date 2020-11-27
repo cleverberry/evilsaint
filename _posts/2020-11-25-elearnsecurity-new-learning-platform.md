@@ -7,7 +7,7 @@ category:
   - hacking
 image: card1-img.png
 date: 2020-11-23T04:27:16.655Z
-tag:
+tags:
   - courses
   - elearnsecurity
   - ine.com

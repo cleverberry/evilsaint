@@ -7,10 +7,10 @@ category:
   - hacking
 image: card1-img.png
 date: 2020-11-23T04:27:16.655Z
-tag:
+tags:
   - elearnsecurity
   - OSCP
-  - Offensive Security
+  - offensive security
   - PTP
 permalink: blog/:title
 ---

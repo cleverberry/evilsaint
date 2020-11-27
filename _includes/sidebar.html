@@ -68,21 +68,9 @@
                 <div class="col">
                     <h3>Tags</h3>
                     <hr />
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/programming/">Programming {% if site.tags.programming.size > 0%}({{ site.tags.programming.size }}){% endif %}</a></button>
-                    <!-- <button class="btn tags-btn"><a href="{{site.baseurl}}/coding/">Coding</a></button> -->
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/security/">Security {% if site.tags.security.size > 0%}({{ site.tags.security.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/white-hat/">White Hat {% if site.tags.white-hat.size > 0%}({{ site.tags.white-hat.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/hex/">Hex {% if site.tags.hex.size > 0%}({{ site.tags.hex.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/hacking/">Hacking {% if site.tags.hacking.size > 0%}({{ site.tags.hacking.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/ethical-hacking/">Ethical
-                            Hacking {% if site.tags.ethical-hacking.size > 0%}({{ site.tags.ethical-hacking.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/code/">Code {% if site.tags.code.size > 0%}({{ site.tags.code.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/security/">Security {% if site.tags.security.size > 0%}({{ site.tags.security.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/windows/">Windows {% if site.tags.windows.size > 0%}({{ site.tags.windows.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/cqure/">Cqure {% if site.tags.cqure.size > 0%}({{ site.tags.cqure.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/advanced/">Advanced {% if site.tags.advanced.size > 0%}({{ site.tags.advanced.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/elearnsecurity/">Elearnsecurity {% if site.tags.elearnsecurity.size > 0%}({{ site.tags.elearnsecurity.size }}){% endif %}</a></button>
-                    <button class="btn tags-btn"><a href="{{site.baseurl}}/ine/">Ine.com {% if site.tags.ine.size > 0%}({{ site.tags.ine.size }}){% endif %}</a></button>
+                    {% for tag in site.tags %}
+                        <button class="btn tags-btn"><a>{{ tag[0] }} {% if site.tags.programming.size > 0%}({{ site.tags.programming.size }}){% endif %}</a></button>
+                    {% endfor %}
                 </div>
             </div>
 
