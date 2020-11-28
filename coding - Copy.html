@@ -28,7 +28,9 @@ layout: default
       <hr />
       <div class="row text-right">
         <div class="col card-btn-bottom">
-          <a href="/{{blog.category}}" class="btn card-btn-pro">{{blog.category}}</a>
+          {% for tag in blog.tags %}
+          <a href="#" class="btn card-btn-pro">{{ tag }}</a>
+          {% endfor %}
         </div>
       </div>
     </div>
