@@ -19,6 +19,7 @@
 
         gtag('config', 'G-X33FB0T6XX');
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 
 <body>
@@ -36,18 +37,26 @@
             background-size: cover;
         }
     </style>
-
     <div class="bg" style="background-image: url('{{site.baseurl}}/assets/images/xmas image.jpg')">
         <div class="container" style="color: white;">
             <div class="row">
                 <div class="col-md-4 col-sm-12 text-center" style="background-color: #BB2528">
                     <hr>
-                    <span style="font-size:100px; font-weight: bolder;">25</span> days
+                    <span id="daysLeft" style="font-size:100px; font-weight: bolder;">25</span> days
                     <div style="margin-bottom: 50px; font-size: 20px; font-weight: bolder">before Christmas!</div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const date1 = new Date('12/25/2020');
+        const date2 = new Date();
+        const diffTime = Math.abs(date2 - date1);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        console.log(diffTime + " milliseconds");
+        console.log(diffDays + " days");
+        $('#daysLeft').text(diffDays)
+    </script>
 </body>
 
 </html>
