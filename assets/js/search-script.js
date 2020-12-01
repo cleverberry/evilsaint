@@ -153,7 +153,7 @@
         resultsContainer: null,
         json: [],
         success: Function.prototype,
-        searchResultTemplate: '<div class="card card-search">  <div class="container main-card-body">    <div class="row">      <div class="col-sm-3 col-xs-12 title-img-col">        <a href="{url}"><img class="card-img-top" src="{image}" alt="{title}" /></a>      </div>      <div class="col card-title-col">        <h5 class="card-title"><a href="{url}">{title}</a></h5>        <span class="card-date">{date}</span>      </div>    </div>     <div class="card-body">      <p class="card-text">{meta}</p>      <a href="{url}" class="btn card-read-more">Read More</a>    </div>  </div>  <div class="container">    <hr />    <div class="row text-right">      <div class="col card-btn-bottom">        <a href="/{category}" class="btn card-btn-pro">{category}</a>      </div>    </div>  </div></div>',
+        searchResultTemplate: '<div class="card card-search">  <div class="container main-card-body">    <div class="row">      <div class="col-sm-3 col-xs-12 title-img-col">        <a href="{url}"><img class="card-img-top" src="{image}" alt="{title}" /></a>      </div>      <div class="col card-title-col">        <h5 class="card-title"><a href="{url}">{title}</a></h5>        <span class="card-date">{date}</span>      </div>    </div>     <div class="card-body">      <p class="card-text">{meta}</p>      <a href="{url}" class="btn card-read-more">Read More</a>    </div>  </div>  <div class="container">    <hr />    <div class="row text-right">      <div class="col card-btn-bottom">        {tags}     </div>    </div>  </div></div>',
         templateMiddleware: Function.prototype,
         sortMiddleware: function() {
             return 0
