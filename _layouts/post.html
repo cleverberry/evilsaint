@@ -15,7 +15,7 @@ layout: inner
   <div class="row text-right">
     <div class="col card-btn-bottom">
       {% for tag in page.tags %}
-      <a href="/" class="btn card-btn-pro">{{ tag }}</a>
+      <a href="{{ site.baseurl }}/tags/{{ tag }}" class="btn card-btn-pro">{{ tag }}</a>
       {% endfor %}
     </div>
   </div>
