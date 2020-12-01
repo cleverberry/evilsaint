@@ -10,7 +10,7 @@ date: 2020-11-23T04:27:16.655Z
 tags:
   - courses
   - elearnsecurity
-  - ine.com
+  - ine-com
 permalink: blog/:title
 ---
 <style>

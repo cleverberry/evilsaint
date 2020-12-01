@@ -69,7 +69,14 @@
                     <h3>Tags</h3>
                     <hr />
                     {% for tag in site.tags %}
-                        <button class="btn tags-btn"><a>{{ tag[0] }} {% if site.tags.programming.size > 0%}({{ site.tags.programming.size }}){% endif %}</a></button>
+                        <button class="btn tags-btn">
+                            <a href="{{ site.baseurl }}/tags/{{ tag[0] }}">
+                            {{ tag[0] }}
+                            {% assign t = tag | first %}
+                            {% assign posts = tag | last %}
+                            ({{ posts | size }})
+                            </a>
+                        </button>
                     {% endfor %}
                 </div>
             </div>
