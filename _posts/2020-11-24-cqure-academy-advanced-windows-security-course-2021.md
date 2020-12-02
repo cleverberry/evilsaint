@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CQure Academy: Advanced Windows Security Course 2021"
+title: "Cqure Academy: Advanced Windows Security Course 2021 - Module 1"
 meta: For those of you who follow the EvilSaint Facebook account, will know that
   today was the start of the CQure Academy Advanced Windows Security course I
   signed up for.
@@ -66,12 +66,14 @@ Before each video lesson, pre-requisite reading material is provided via the Thi
 
 Tonight's session started at 6pm UK time. The lesson started fairly prompt, only a few minutes past the hour; I noticed a couple of moaning comments under the Facebook post advertising the start time in the private group, this was a 6:01pm, had to laugh, but hey l guess you get these types throughout all walks of life.
 
-The session was okay, I wouldn’t say advanced however I guess it is all about perspectives and prior experience. This was the first session so a lot of introduction type content and housekeeping yet despite this I still picked up two new things that l didn’t know before the lesson which for me I felt was good value.
+The session was okay, I wouldn’t say advanced however I guess it is all about perspectives and prior experience. This was the first session so a lot of introduction type content and housekeeping yet despite this I still picked up two new things that l didn’t know before the lesson which for me at this stage of my career felt like I was getting good value.
 
-The instructors, Paula and Mike were up-beat and excited to be teaching the revamped curriculum, the Zoom platform was stable and with the exception of one person commenting in the chat the audio was crisp for everyone.
+The instructors, Paula and Mike were up-beat and excited to be teaching the revamped the curriculum from previous years; the Zoom platform used for the live sessions was stable and with the exception of one person commenting in the chat to the contrary, the audio was crisp for everyone else.
 
 Unfortunately, the first demo that Paula attempted didn’t work as expected, possibly caused due to the Demo Gods not receiving a big enough sacrifice prior to lesson commencement. When the demo didn’t work l had flashbacks to every to every demo I have given in my own private ethical hacking mentoring group that had ever gone wrong. Luckily, Paula was a pro and was prepared with screenshots, so we all understood the point of what was supposed to happen.
 
-Mike walked us through some interesting paths of gaining footholds into companies infrastructure via employees working from home.  I really liked this approach; many courses show you individual attacks and typically step you through them in isolation. Mike guided us through a progressive group of attacks and techniques that could be chained together in a very realistic scenario. 
+Mike walked us through some interesting paths of gaining footholds into companies infrastructure via employees working from home, Mike also got hit once with a strike from the Demo Gods but it was a demo we could replicate in the lab environment.  
+
+So far I really like the Cqure approach to the modules; many courses show you individual attacks, and they typically step you through an exercise where they team  them in isolation. Mike guided us through a progressive group of attacks and techniques that could be chained together in a very realistic scenario. 
 
 I am looking forward to the next session and depending on how this course progresses may do another Cqure academy course straight after this one.
