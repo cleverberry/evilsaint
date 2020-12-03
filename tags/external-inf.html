@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<h1>External Inf</h1>
+<hr>
+<div class="card-columns">
+  {% for blog in site.tags.external-inf %}
+  <div class="card">
+    <div class="container main-card-body">
+      <div class="row">
+        <div class="col-sm-3 col-xs-12 title-img-col">
+          <a href="{{blog.url | prepend: site.baseurl}}"><img class="card-img-top"
+              src="{{site.baseurl}}/assets/images/{{blog.image}}" alt="{{blog.title}}" /></a>
+        </div>
+        <div class="col card-title-col">
+          <a href="{{blog.url | prepend: site.baseurl}}">
+            <h5 class="card-title">{{blog.title}}</h5>
+          </a>
+          <span class="card-date">{{ blog.date | date_to_string }}</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{blog.meta}}</p>
+        <a href="{{ blog.url | prepend: site.baseurl }}" class="btn card-read-more">Read More</a>
+      </div>
+    </div>
+    <div class="container">
+      <hr />
+      <div class="row text-right">
+        <div class="col card-btn-bottom">
+          {% for tag in blog.tags %}
+          <a href="{{ site.baseurl }}/tags/{{ tag }}" class="btn card-btn-pro">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-1 img-adidas" style="max-width: 420px; width: 100%; display: block;" /></a>
+  <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-2 img-por" style="max-width: 420px; width: 100%; display: block;" /></a>
+  <a target="_blank" href="https://www.xvbelink.com/?a_fid=5AINT"><img class="ads ad-3 img-nike" style="max-width: 420px; width: 100%; display: block;" /></a>
+  <!-- <img class="ads ad-1 img-adidas" src="{{site.baseurl}}/assets/images/adidas.png" alt=""
+    style="max-width: 420px; width: 100%; display: block;" />
+  <img class="ads ad-2 img-por" src="{{site.baseurl}}/assets/images/por1.png" alt=""
+    style="max-width: 420px; width: 100%; display: block;" />
+  <img class="ads ad-3 img-nike" src="{{site.baseurl}}/assets/images/nike1.png" alt=""
+    style="max-width: 420px; width: 100%; display: block;" /> -->
+</div>
