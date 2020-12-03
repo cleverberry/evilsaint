@@ -1,0 +1,69 @@
+---
+title: Day 3
+layout: christmas
+mainQ: By having GenericWrite access to another user account, you could perform the following attack
+option1: "A -Targeted kerberoasting by temporary assigning SPN and requesting kerberos ticket for that SPN"
+option2: "B - Golden ticket, by providing user's name as krbtgt NT hash"
+option3: "C - Secret recovery, by asking DC on user's behalf, for plaintext answer for their &quot;password recovery&quot; secret"
+option4: "D - DCShadow, by creating a copy of user accounts and convincing other users that it is replicated DC"
+---
+
+<div class="col-12 text-center">
+    <h1>{{page.title}}</h1>
+</div>
+<div class="col-12 text-center">
+    <h2>{{ page.mainQ }}</h2>
+</div>
+<div class="col-sm-12">
+    <script>var submitted = false;</script>
+    <form name="gform" id="gform" enctype="text/plain"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfV_fAepgmeWPBI4kH5OibqSww9q6Lan4bAL0Op2C2OByMATg/formResponse?"
+        target="hidden_iframe" onsubmit="submitted=true;">
+        <div class="form-group">
+            <div class="p-10" style="padding: 0px 21px;">
+                <input type="text" class="form-control" name="entry.883113395" id="entry.883113395"
+                    value="{{ page.title }}" hidden>
+                <input type="text" class="form-control" name="entry.1172699080" id="entry.1172699080"
+                    value="{{ page.mainQ }}" hidden>
+                <input class="form-check-input christmasRadios" type="radio" name="entry.330314399" id="optionInput1"
+                    value="Option 1">
+                <label class="form-check-label christmasRadioLabels" for="optionInput1">
+                    {{ page.option1 }}
+                </label>
+                <br>
+                <input class="form-check-input christmasRadios" type="radio" name="entry.330314399" id="optionInput2"
+                    value="Option 2">
+                <label class="form-check-label christmasRadioLabels" for="optionInput2">
+                    {{ page.option2 }}
+                </label>
+                <br>
+                <input class="form-check-input christmasRadios" type="radio" name="entry.330314399" id="optionInput3"
+                    value="Option 3">
+                <label class="form-check-label christmasRadioLabels" for="optionInput3">
+                    {{ page.option3 }}
+                </label>
+                <br>
+                <input class="form-check-input christmasRadios" type="radio" name="entry.330314399" id="optionInput4"
+                    value="Option 4">
+                <label class="form-check-label christmasRadioLabels" for="optionInput4">
+                    {{ page.option4 }}
+                </label>
+            </div><br>
+            <input type="text" class="form-control nameInput" name="entry.2127154406" id="entry.2127154406"
+                aria-describedby="nameHelp" placeholder="Your name" required>
+            <input type="email" class="form-control emailInput" name="entry.731976444" id="entry.731976444"
+                aria-describedby="emailHelp" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary form-control">Submit Answer</button>
+        </div>
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <script>
+        $(document).ready(function () {
+            $('#gform').on('submit', function (e) {
+                $('#gform *').fadeOut(2000);
+                $('h2').fadeOut(2000);
+                $('#gform').prepend('<h3 class="text-center">Your submission has been submitted.</h3>');
+            });
+        })
+    </script>
+</div>
