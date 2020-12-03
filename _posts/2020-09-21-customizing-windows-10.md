@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Welcome to Windows 2020
+title: Customizing Windows 10
 meta: This guide is going to take you through a number of components to get your
   machine ready for subsequent parts of this guide.
-category: programming
+category: hacking
 image: card1-img.png
 date: 21 September 2020
-tags: programming
+tags:
 ---
 # Welcome to Windows 2020
 
