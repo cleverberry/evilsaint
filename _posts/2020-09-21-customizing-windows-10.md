@@ -7,6 +7,7 @@ category: hacking
 image: card1-img.png
 date: 21 September 2020
 tags:
+permalink: blog/:title
 ---
 # Welcome to Windows 2020
 
