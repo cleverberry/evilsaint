@@ -6,7 +6,7 @@ category:
   - programming
   - tools
 image: card1-img.png
-date: 2020-12-03
+date: 2020-12-07
 tags:
     - courses
     - vultr
