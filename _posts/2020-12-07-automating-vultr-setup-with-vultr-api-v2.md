@@ -267,7 +267,7 @@ Include a JSON object in the request body with a content type of application/jso
 <td>The Operating System id to use when deploying this instance.</td>
 </tr>
 <tr>
-<td>ipxe_chain_url/td>
+<td>ipxe_chain_url</td>
 <td>string</td>
 <td>The URL location of the iPXE chainloader.</td>
 </tr>
@@ -277,7 +277,7 @@ Include a JSON object in the request body with a content type of application/jso
 <td>The ISO id to use when deploying this instance.</td>
 </tr>
 <tr>
-<td>script_id/td>
+<td>script_id</td>
 <td>integer</td>
 <td>The Startup Script id to use when deploying this instance.</td>
 </tr>
