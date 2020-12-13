@@ -35,7 +35,17 @@ Topics covered in this were module were "Certificates and Public Key Infrastruct
 
 We started off with the basics and defined a few terms that often get confused, Encoding, Encryption, Hashing, Signing and then we moved on to understanding the mathmatics behind Asymmetric Cryptography, we looked a Diffie-Hellman-Merkle key exchange and RSA. I really liked this, for agest I have understood the difference between aysemetric and symetric algorithms but had never taken the time to look into the maths behind them. 
 
-With the basic theory understood we moved on to PKI Infrastructure, this section started out with a look at Digital Certificate 
+With the basic theory understood we moved on to PKI Infrastructure, this section started out with a look at Digital Certificates and moved on to looking at Root and Subordinate CAs, verifying the chain and then we moved on to comprimising the security of the domain from being able to edit the templates for the PKI. 
+
+Obviously I have heavily summarised the above and I would hate to make it sound like something you could pick up from a few YouTube videos. In fact I recall Mike joking about the fact he had talked for an hour and 16 minutes before passing over to Milosz.
+
+Milosz dealt witht the topic of
+
+
+
+
+
+
 
 <ul>
 <li>Encoding</li>
