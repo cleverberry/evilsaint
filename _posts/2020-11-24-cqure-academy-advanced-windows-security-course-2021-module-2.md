@@ -85,10 +85,11 @@ Remember these are relative to my own experiences and prior knowledge
 
 ### References
 
-https://ss64.com/nt/fltmc.html
-https://lolbas-project.github.io/
-http://www.decalage.info/python/oletools
-https://blog.didierstevens.com/programs/oledump-py/
-https://github.com/outflanknl/EvilClippy
-https://www.decalage.info/python/pdfid
-https://github.com/dzzie/pdfstreamdumper
+* https://ss64.com/nt/fltmc.html
+* https://lolbas-project.github.io/
+* http://www.decalage.info/python/oletools
+* https://blog.didierstevens.com/programs/oledump-py/
+* https://github.com/outflanknl/EvilClippy
+* https://www.decalage.info/python/pdfid
+* https://github.com/dzzie/pdfstreamdumper
+* https://github.com/vinaypamnani/wmie2/releases
