@@ -60,11 +60,16 @@ If I had one gripe with the course so far I would say it is the fact the webinar
 
 ### Rating
 
-Remember these are relative to my own experiences and 
+Remember these are relative to my own experiences and prior knowledge
 
-Enjoyment: 7/10
-Difficultry: 6/10
-Labs: 8
+<dl>
+<dt>Enjoyment:</dt>
+<dd>7/10</dd>
+<dt>Difficultry:</dt>
+<dd>6/10</dd>
+<dt>Labs:</dt>
+<dd>7/10</dd>
+</dl>
 
 ### References
 
