@@ -54,14 +54,17 @@ One of the tools that we looked at for macro inspection for Office Macros was <a
 
 Prior to the session I had only used the oledump tool by legend Didier Steves, if that name doesnt ring a bell then I suggest you check out his website. His cmd.exe as a dll file has helped me out on many stolen laptop assessments. Also, on this note, check out the tool by OneLogicalMyth (see references below) he has created a beautiful HTA shell that is just as handy.
 
-Adrian spent the majority of the session looking at variou malware hiding and deofuscation techniques and rapidly introduced us to a lot of tools. I wont go into full details as I dont think it is fair to Cqure or other students who have paid like me. Instead I will give people a few interesting things to research into in their own time
+Adrian spent the majority of the session looking at variou malware hiding and deofuscation techniques and rapidly introduced us to a lot of tools. I wont go into full details as I dont think it is fair to Cqure or other students who have paid like me. Instead I will give people a few interesting things to look into and research in their own time.
 
-* VBA macro deobfuscation technique
-* primer of the oletools suite
-* EvilClippy and PDF Stomping
-* Using HxD to hide sheets in Excel Spreadsheets
+* VBA macro deobfuscation technique.
+* primer of the oletools suite.
+* EvilClippy and PDF Stomping.
+* Using HxD to hide sheets in Excel Spreadsheets.
 * Decompiling PDFs and reading malicious JavaScript stored within.
-* Deconstructing Kovter (Case Study of Fileless Malware in the wild)
+* Deconstructing Kovter (Case Study of Fileless Malware in the wild).
+* Injecting Null Code bytes into the registry to stop regedit from examining payloads.
+* Typical shellcode functions such as <code>virtualalloc</code> and <code>memset</code>.
+* Registry persisence techniques.
 
 All I will say is check out EvilClippy and read the associated blog in the references at the bottom of the page. Adrian introduced us to this tools and some of the tecniques it can be usef for are certainly eye opening. 
 
