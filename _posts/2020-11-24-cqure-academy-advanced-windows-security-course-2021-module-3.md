@@ -39,8 +39,7 @@ With the basic theory understood we moved on to PKI Infrastructure, this section
 
 Obviously I have heavily summarised the above and I would hate to make it sound like something you could pick up from a few YouTube videos. In fact I recall Mike joking about the fact he had talked for an hour and 16 minutes before passing over to Milosz.
 
-Handing over to Milosz; Mike had explained how PKI had worked and how we can abused it. Milosz dealt with the topics such as why use PKI and how we can keep it secure. One interesting part was how to use PKI infrastructure to allow trusted Macros, signed binaries and how to immplement the with AppLocker rules.  As someone always focused on the offensive it was quite refreshing to hear some advanced technical analysics on defending and so hats off to Cqure for including this in the course. 
-
+Handing over to Milosz; Mike had explained how PKI had worked and how we can abused it. Milosz dealt with the topics such as why use PKI and how we can keep it secure. One interesting part was how to use PKI infrastructure to allow trusted Macros, signed binaries and how to immplement the with AppLocker rules.  As someone always focused on the offensive it was quite refreshing to hear some advanced technical analysics on defending and so hats off to Cqure for including this in the course.  
 
 ### Rating
 
