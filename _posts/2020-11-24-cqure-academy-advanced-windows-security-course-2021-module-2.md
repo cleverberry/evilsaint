@@ -83,7 +83,7 @@ Remember these are relative to my own experiences and prior knowledge
 <dd>7/10</dd>
 </dl>
 
-### References
+### References (and related links)
 
 * https://ss64.com/nt/fltmc.html
 * https://lolbas-project.github.io/
@@ -93,3 +93,4 @@ Remember these are relative to my own experiences and prior knowledge
 * https://www.decalage.info/python/pdfid
 * https://github.com/dzzie/pdfstreamdumper
 * https://github.com/vinaypamnani/wmie2/releases
+* https://www.dcsoft.com/products/regeditx/
