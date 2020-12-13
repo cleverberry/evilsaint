@@ -54,7 +54,16 @@ One of the tools that we looked at for macro inspection for Office Macros was <a
 
 Prior to the session I had only used the oledump tool by legend Didier Steves, if that name doesnt ring a bell then I suggest you check out his website. His cmd.exe as a dll file has helped me out on many stolen laptop assessments. Also, on this note, check out the tool by OneLogicalMyth (see references below) he has created a beautiful HTA shell that is just as handy.
 
-Adrian spent the majority of the session looking at VBA macro deobfuscation techniques and gave us a primer of the oletools suite. I wont go into full details as I dont think it is fair to Cqure or other students who have paid like me. All I will say is check out EvilClippy and read the associated blog in the references at the bottom of the page. Adrian introduced us to this tools and some of the tecniques it can be usef for are certainly eye opening. 
+Adrian spent the majority of the session looking at variou malware hiding and deofuscation techniques and rapidly introduced us to a lot of tools. I wont go into full details as I dont think it is fair to Cqure or other students who have paid like me. Instead I will give people a few interesting things to research into in their own time
+
+* VBA macro deobfuscation technique
+* primer of the oletools suite
+* EvilClippy and PDF Stomping
+* Using HxD to hide sheets in Excel Spreadsheets
+* Decompiling PDFs and reading malicious JavaScript stored within.
+* Deconstructing Kovter (Case Study of Fileless Malware in the wild)
+
+All I will say is check out EvilClippy and read the associated blog in the references at the bottom of the page. Adrian introduced us to this tools and some of the tecniques it can be usef for are certainly eye opening. 
 
 If I had one gripe with the course so far I would say it is the fact the webinars go straight through with no break. It is by no means a major gripe as the sessions are recorded and are available later however when you are eagerly listening it is hard to detect a convenient point to quickly nip to the bathroom, in addition, it can take 24 hours for the recorded material to be uploaded so if you have scheduled time for the evening you might be dissapointed to have to wait to the next day to fill in some knowledge you might of missed. 
 
@@ -78,3 +87,5 @@ https://lolbas-project.github.io/
 http://www.decalage.info/python/oletools
 https://blog.didierstevens.com/programs/oledump-py/
 https://github.com/outflanknl/EvilClippy
+https://www.decalage.info/python/pdfid
+https://github.com/dzzie/pdfstreamdumper
