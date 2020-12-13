@@ -39,28 +39,7 @@ With the basic theory understood we moved on to PKI Infrastructure, this section
 
 Obviously I have heavily summarised the above and I would hate to make it sound like something you could pick up from a few YouTube videos. In fact I recall Mike joking about the fact he had talked for an hour and 16 minutes before passing over to Milosz.
 
-Milosz dealt witht the topic of
-
-
-
-
-
-
-
-<ul>
-<li>Encoding</li>
-<li>Encryption</li>
-<li>Hashing </li>
-<li>Signing</li>
-</ul>
-
-We then moved to look at Asymetric and Symetric Encryption, we looked at the algorithms used and the mass behind them. Mikes gave good explanations on the mass behing and worked out and calculated examples for us to follow. 
-
-This was a long section with Mike speaking for almost 1 hour and 20 minutes; we covered the differences bween asymetic and sysmetric encrption, dicussions on encoding and signing and a discussion about checksumbs, collision attacks and dual checksums found on system files.
-
-Practics for this session looked at gaining admin rights by taking over writable certificate templates. 
-
-This was my favourite module yet. 
+Handing over to Milosz; Mike had explained how PKI had worked and how we can abused it. Milosz dealt with the topics such as why use PKI and how we can keep it secure. One interesting part was how to use PKI infrastructure to allow trusted Macros, signed binaries and how to immplement the with AppLocker rules.  As someone always focused on the offensive it was quite refreshing to hear some advanced technical analysics on defending and so hats off to Cqure for including this in the course. 
 
 
 ### Rating
@@ -69,9 +48,9 @@ Remember these are relative to my own experiences and prior knowledge
 
 <dl>
 <dt>Enjoyment:</dt>
-<dd>7/10</dd>
+<dd>7.5/10</dd>
 <dt>Difficultry:</dt>
-<dd>6/10</dd>
+<dd>8/10</dd>
 <dt>Labs:</dt>
 <dd>7/10</dd>
 </dl>
