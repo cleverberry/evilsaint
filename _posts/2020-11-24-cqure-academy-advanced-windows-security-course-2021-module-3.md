@@ -56,6 +56,12 @@ Remember these are relative to my own experiences and prior knowledge
 
 ### References
 
-https://en.wikipedia.org/wiki/X.509
-https://www.ssl.com/faqs/what-is-an-x-509-certificate/
-https://social.technet.microsoft.com/wiki/contents/articles/7421.active-directory-certificate-services-ad-cs-public-key-infrastructure-pki-design-guide.aspx
+<div class="reference-container">
+    <a href="https://en.wikipedia.org/wiki/X.509">X.509</a><br>
+    <a href="https://www.ssl.com/faqs/what-is-an-x-509-certificate/">X.509 Certificates</a><br>
+    <a href="https://social.technet.microsoft.com/wiki/contents/articles/7421.active-directory-certificate-services-ad-cs-public-key-infrastructure-pki-design-guide.aspx">Active Directory Certificate Services</a><br>
+</div>
+
+
+
+
