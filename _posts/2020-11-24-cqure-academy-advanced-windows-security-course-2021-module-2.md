@@ -85,12 +85,14 @@ Remember these are relative to my own experiences and prior knowledge
 
 ### References (and related links)
 
-* https://ss64.com/nt/fltmc.html
-* https://lolbas-project.github.io/
-* http://www.decalage.info/python/oletools
-* https://blog.didierstevens.com/programs/oledump-py/
-* https://github.com/outflanknl/EvilClippy
-* https://www.decalage.info/python/pdfid
-* https://github.com/dzzie/pdfstreamdumper
-* https://github.com/vinaypamnani/wmie2/releases
-* https://www.dcsoft.com/products/regeditx/
+<div class="reference-container">
+    <a href="https://ss64.com/nt/fltmc.html">FLTMC</a><br>
+    <a href="https://lolbas-project.github.io/">Lolbas Project Github</a><br>
+    <a href="http://www.decalage.info/python/oletools">Oletools</a><br>
+    <a href="https://blog.didierstevens.com/programs/oledump-py/">Oledump</a><br>
+    <a href="https://github.com/outflanknl/EvilClippy">EvilClippy</a><br>
+    <a href="https://www.decalage.info/python/pdfid">Pdfid</a><br>
+    <a href="https://github.com/dzzie/pdfstreamdumper">PDF Stream Dumper</a><br>
+    <a href="https://github.com/vinaypamnani/wmie2/releases">Releases</a><br>
+    <a href="https://www.dcsoft.com/products/regeditx/">Regeditx</a><br>
+</div>
