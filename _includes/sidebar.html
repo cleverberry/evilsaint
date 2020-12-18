@@ -42,31 +42,215 @@
                     <h3>Categories</h3>
                     <hr />
                     <ul>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <!-- <li><a href="{{site.baseurl}}/coding/">Coding</a></li> -->
-                        <li><a href="{{site.baseurl}}/programming/">Programming</a></li>
-                        <li><a href="{{site.baseurl}}/hacking/">Hacking</a></li>
-                        <li><a href="{{site.baseurl}}/security/">Security</a></li>
-                        <li><a href="{{site.baseurl}}/news/">News</a></li>
-                        <li><a href="{{site.baseurl}}/tools/">Tools</a></li>
                         <li>
-                            <a class="subcategory-header" style="cursor: pointer;">Capture The Flag (CTF)</a>
+                            <a class="subcategory-header" style="cursor: pointer;">Attacking</a>
                             <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
-                                <li><a href="{{site.baseurl}}/vulnhub/">Vulnhub</a></li>
-                                <li><a href="{{site.baseurl}}/hackthebox/">HackTheBox</a></li>
+                                <li><a href="{{site.baseurl}}/">Brute-force</a></li>
+                                <li><a href="{{site.baseurl}}/">Cracking</a></li>
+                                <li><a href="{{site.baseurl}}/">Decompiling</a></li>
+                                <li><a href="{{site.baseurl}}/">Reverse Engineering</a></li>
                             </ul>
-                            <script>
-                                $('.subcategory-header').on('click', function() {
-                                    $(this).next().slideToggle()
-                                })
-                                $('.subcategory').hide()
-                            </script>
                         </li>
-                        <li><a href="{{site.baseurl}}/hack-the-box/">Hack The Box (HTB)</a></li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Techniques & Tradecraft</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Content Discovery</a></li>
+                                <li><a href="{{site.baseurl}}/">Exploitation</a></li>
+                                <li><a href="{{site.baseurl}}/">Evasion</a></li>
+                                <li><a href="{{site.baseurl}}/">Host Discovery</a></li>
+                                <li><a href="{{site.baseurl}}/">MITM</a></li>
+                                <li><a href="{{site.baseurl}}/">SMB Relaying</a></li>
+                                <li><a href="{{site.baseurl}}/">Transfer Files</a></li>
+                                <li><a href="{{site.baseurl}}/">Port Scanning</a></li>
+                                <li><a href="{{site.baseurl}}/">Shells</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">The Law</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Computer Misuse Act</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">C2 Channels</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Beacon</a></li>
+                                <li><a href="{{site.baseurl}}/">Cobalt Strike</a></li>
+                                <li><a href="{{site.baseurl}}/">Empire</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Life as a Pentester</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Engagements</a></li>
+                                <li><a href="{{site.baseurl}}/">Reporting</a></li>
+                                <li><a href="{{site.baseurl}}/">Mitigation Advice</a></li>
+                                <li><a href="{{site.baseurl}}/">KIT</a></li>
+                                <li><a href="{{site.baseurl}}/">General Tips and Advice</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Tools</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Metasploit</a></li>
+                                <li><a href="{{site.baseurl}}/">Nmap</a></li>
+                                <li><a href="{{site.baseurl}}/">Wireshark</a></li>
+                                <li><a href="{{site.baseurl}}/">TCP Dump</a></li>
+                                <a class="subcategory-header" style="cursor: pointer;">Netcat</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">Sed</a></li>
+                                    <li><a href="{{site.baseurl}}/">Awk</a></li>
+                                    <li><a href="{{site.baseurl}}/">Curl</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Infrastructure (Inf Assessment)</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <a class="subcategory-header" style="cursor: pointer;">External</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">Active Directory</a></li>
+                                    <li><a href="{{site.baseurl}}/">OWA</a></li>
+                                    <li><a href="{{site.baseurl}}/">VPN</a></li>
+                                </ul>
+                                <a class="subcategory-header" style="cursor: pointer;">Internal</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">Active Directory</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Databases</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">MongoDB</a></li>
+                                <li><a href="{{site.baseurl}}/">MS-SQL (SQL Server)</a></li>
+                                <li><a href="{{site.baseurl}}/">Oracle</a></li>
+                                <li><a href="{{site.baseurl}}/">Postgresql</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Web Apps</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">(Custom) Off The Shelf</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Technologies</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Firewalls</a></li>
+                                <li><a href="{{site.baseurl}}/">VPN</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Programming Languages</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Bash</a></li>
+                                <li><a href="{{site.baseurl}}/">Batch</a></li>
+                                <li><a href="{{site.baseurl}}/">Golang</a></li>
+                                <li><a href="{{site.baseurl}}/">PHP</a></li>
+                                <li><a href="{{site.baseurl}}/">PowerShell</a></li>
+                                <li><a href="{{site.baseurl}}/">Python</a></li>
+                                <li><a href="{{site.baseurl}}/">Ruby</a></li>
+                                <li><a href="{{site.baseurl}}/">VBS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Operating Systems</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <a class="subcategory-header" style="cursor: pointer;">Linux</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">Command Line Kun-Fu</a></li>
+                                    <li><a href="{{site.baseurl}}/">System Enumeration</a></li>
+                                </ul>
+                                <a class="subcategory-header" style="cursor: pointer;">Windows</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">System Enumeration</a></li>
+                                    <li><a href="{{site.baseurl}}/">Registry</a></li>
+                                    <li><a href="{{site.baseurl}}/">Windows Password Storage</a></li>
+                                    <li><a href="{{site.baseurl}}/">Credential Storage</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Post Exploitation</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Pillaging</a></li>
+                                <li><a href="{{site.baseurl}}/">Privilege Escalation</a></li>
+                                <li><a href="{{site.baseurl}}/">Persistence </a></li>
+                                <a class="subcategory-header" style="cursor: pointer;">Lateral Movement</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">Pivoting</a></li>
+                                    <li><a href="{{site.baseurl}}/">Remote Code Execution (RCE)</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Protocols</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">CDP</a></li>
+                                <li><a href="{{site.baseurl}}/">DNS</a></li>
+                                <li><a href="{{site.baseurl}}/">Finger</a></li>
+                                <li><a href="{{site.baseurl}}/">FTP</a></li>
+                                <li><a href="{{site.baseurl}}/">LDAP</a></li>
+                                <li><a href="{{site.baseurl}}/">MySQL</a></li>
+                                <li><a href="{{site.baseurl}}/">NFS</a></li>
+                                <li><a href="{{site.baseurl}}/">NTP</a></li>
+                                <li><a href="{{site.baseurl}}/">R-Services</a></li>
+                                <li><a href="{{site.baseurl}}/">RDP</a></li>
+                                <li><a href="{{site.baseurl}}/">RPC</a></li>
+                                <li><a href="{{site.baseurl}}/">SMB</a></li>
+                                <li><a href="{{site.baseurl}}/">SNMP</a></li>
+                                <li><a href="{{site.baseurl}}/">SSH</a></li>
+                                <li><a href="{{site.baseurl}}/">Telnet</a></li>
+                                <li><a href="{{site.baseurl}}/">TFTP</a></li>
+                                <li><a href="{{site.baseurl}}/">VOIP</a></li>
+                                <li><a href="{{site.baseurl}}/">X-Windows</a></li>
+                                <li><a href="{{site.baseurl}}/">XDMCP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Networking</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <a class="subcategory-header" style="cursor: pointer;">Routing Protocols</a>
+                                <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                    <li><a href="{{site.baseurl}}/">RIP</a></li>
+                                    <li><a href="{{site.baseurl}}/">OSPF</a></li>
+                                    <li><a href="{{site.baseurl}}/">EIGRP</a></li>
+                                </ul>
+                                <li><a href="{{site.baseurl}}/">IPv6</a></li>
+                                <li><a href="{{site.baseurl}}/">Vlans</a></li>
+                                <li><a href="{{site.baseurl}}/">802.11x</a></li>
+                                <li><a href="{{site.baseurl}}/">Wireless</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Social Engineering</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Phishing</a></li>
+                                <li><a href="{{site.baseurl}}/">Hardware</a></li>
+                                <li><a href="{{site.baseurl}}/">Other</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Reference</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">Cheatsheets</a></li>
+                                <li><a href="{{site.baseurl}}/">Wallpapers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="subcategory-header" style="cursor: pointer;">Capture-the-Flag(s)</a>
+                            <ul class="subcategory" style="padding-left: 30px; cursor: pointer;">
+                                <li><a href="{{site.baseurl}}/">HTB</a></li>
+                                <li><a href="{{site.baseurl}}/">Vulnhub</a></li>
+                            </ul>
+                        </li>
+                        <script>
+                            $('.subcategory-header').on('click', function() {
+                                $(this).next().slideToggle()
+                            })
+                            $('.subcategory').hide()
+                        </script>
                     </ul>
                 </div>
             </div>
